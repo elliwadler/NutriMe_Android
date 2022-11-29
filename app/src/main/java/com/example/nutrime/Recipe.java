@@ -7,13 +7,13 @@ import java.util.Dictionary;
 
 public class Recipe {
     private String name;
-    private Image picture;
+    private int picture;
     private String[] description;
     private Properties properties;
     private int rating;
     private double duration;
 
-    Recipe(String name, Image picture, String[] description, Properties properties, int rating, double duration){
+    Recipe(String name, int picture, String[] description, Properties properties, int rating, double duration){
         this.name = name;
         this.picture = picture;
         this.description = description;
@@ -30,11 +30,11 @@ public class Recipe {
         this.name = name;
     }
 
-    public Image getPicture() {
+    public int getPicture() {
         return picture;
     }
 
-    public void setPicture(Image picture) {
+    public void setPicture(int picture) {
         this.picture = picture;
     }
 

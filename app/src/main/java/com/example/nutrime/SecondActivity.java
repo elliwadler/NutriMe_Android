@@ -26,17 +26,17 @@ public class SecondActivity extends AppCompatActivity {
         tv.setText("Rezepte");
 
         ListView simpleList;
-
+        int flags[] = new int[recipes.length];
         String recipe_Name_List[] = new String[recipes.length];
         String recipe_Rating_List[] = new String[recipes.length];
         for (int i = 0; i<recipes.length;i++)
         {
             recipe_Name_List[i] = recipes[i].getName();
             recipe_Rating_List[i] = String.valueOf(recipes[i].getRating());
+            flags[i] = recipes[i].getPicture();
         }
 
 
-        int flags[] = {R.drawable.cheese_background, R.drawable.cheese_background, R.drawable.cheese_background};
 
         simpleList = (ListView) findViewById(R.id.simpleListView);
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), recipe_Name_List, recipe_Rating_List, flags);

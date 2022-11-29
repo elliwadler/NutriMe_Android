@@ -91,6 +91,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="C:\Users\ellil\OneDrive\Dokumente\WS22\MobilePlattform\NutriMe_images\kiwi-smoothie-bowl.jpg" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -122,8 +123,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundAssetType" value="CLIP_ART" />
-                                      <entry key="outputName" value="cheese" />
+                                      <entry key="outputName" value="kiwi_bowl" />
                                     </map>
                                   </option>
                                 </PersistentState>
