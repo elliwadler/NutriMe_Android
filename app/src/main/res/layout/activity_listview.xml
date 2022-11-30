@@ -28,9 +28,25 @@
             android:textSize="18dp"
             android:fontFamily="sans-serif-medium"
             app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textView_properties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Rating"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Rating"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textView_timing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"

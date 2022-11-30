@@ -3,17 +3,31 @@ package com.example.nutrime;
 import android.media.Image;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Dictionary;
 
 public class Recipe {
     private String name;
     private int picture;
     private String[] description;
+
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "name='" + name + '\'' +
+                ", picture=" + picture +
+                ", description=" + Arrays.toString(description) +
+                ", properties=" + properties +
+                ", rating=" + rating +
+                ", duration=" + duration +
+                '}';
+    }
+
     private Properties properties;
     private int rating;
-    private double duration;
+    private long duration;
 
-    Recipe(String name, int picture, String[] description, Properties properties, int rating, double duration){
+    Recipe(String name, int picture, String[] description, Properties properties, int rating, long duration){
         this.name = name;
         this.picture = picture;
         this.description = description;
@@ -62,11 +76,11 @@ public class Recipe {
         this.rating = rating;
     }
 
-    public double getDuration() {
+    public long getDuration() {
         return duration;
     }
 
-    public void setDuration(double duration) {
+    public void setDuration(long duration) {
         this.duration = duration;
     }
 }

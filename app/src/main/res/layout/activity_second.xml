@@ -33,6 +33,6 @@
         android:dividerHeight="10dp"
         android:footerDividersEnabled="false"
         android:padding="10dp"
-        />
+        android:contextClickable="true"/>
 </LinearLayout>
 

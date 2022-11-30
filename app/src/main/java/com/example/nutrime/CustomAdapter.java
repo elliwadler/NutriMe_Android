@@ -7,22 +7,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.zip.Inflater;
 
 public class CustomAdapter extends BaseAdapter {
     Context context;
     String name_List[];
     String rating_List[];
-    int flags[];
+    String time_List[];
+    int pictures[];
+    ArrayList properties_List;
     LayoutInflater inflter;
 
-    public CustomAdapter(Context applicationContext, String[] name_List, String[] rating_List, int[] flags) {
+    public CustomAdapter(Context applicationContext, String[] name_List, String[] rating_List, int[] pictures, ArrayList properties_List, String[] time_List) {
         this.context = context;
         this.name_List = name_List;
         this.rating_List = rating_List;
-        this.flags = flags;
+        this.pictures = pictures;
+        this.properties_List = properties_List;
+        this.time_List = time_List;
         inflter = (LayoutInflater.from(applicationContext));
     }
 
@@ -46,11 +55,19 @@ public class CustomAdapter extends BaseAdapter {
         view = inflter.inflate(R.layout.activity_listview, null);
         TextView name = (TextView) view.findViewById(R.id.textView_name);
         TextView rating = (TextView) view.findViewById(R.id.textView_rating);
+        TextView properties = (TextView) view.findViewById(R.id.textView_properties);
+        TextView time = (TextView) view.findViewById(R.id.textView_timing);
+
+        String[] value = (String[]) properties_List.get(i);
 
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
         name.setText(name_List[i]);
         rating.setText(rating_List[i]);
-        icon.setImageResource(flags[i]);
+        time.setText(time_List[i]);
+        properties.setText(Arrays.toString((String[]) properties_List.get(i)));
+        icon.setImageResource(pictures[i]);
         return view;
+
     }
+
 }
