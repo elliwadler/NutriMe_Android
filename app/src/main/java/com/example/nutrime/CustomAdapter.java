@@ -55,16 +55,28 @@ public class CustomAdapter extends BaseAdapter {
         view = inflter.inflate(R.layout.activity_listview, null);
         TextView name = (TextView) view.findViewById(R.id.textView_name);
         TextView rating = (TextView) view.findViewById(R.id.textView_rating);
-        TextView properties = (TextView) view.findViewById(R.id.textView_properties);
         TextView time = (TextView) view.findViewById(R.id.textView_timing);
+
+        TextView properties1 = (TextView) view.findViewById(R.id.textView_properties1);
+        TextView properties2 = (TextView) view.findViewById(R.id.textView_properties2);
+        TextView properties3 = (TextView) view.findViewById(R.id.textView_properties3);
 
         String[] value = (String[]) properties_List.get(i);
 
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
         name.setText(name_List[i]);
-        rating.setText(rating_List[i]);
+        rating.setText(rating_List[i]+" Kochlöffel");
         time.setText(time_List[i]);
-        properties.setText(Arrays.toString((String[]) properties_List.get(i)));
+
+        if(value.length>=1){
+            properties1.setText(value[0]);
+            if (value.length >= 2){
+                properties2.setText(value[1]);
+                if(value.length >= 3) {
+                    properties3.setText(value[2]);
+                }
+            }
+        }
         icon.setImageResource(pictures[i]);
         return view;
 

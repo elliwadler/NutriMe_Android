@@ -22,7 +22,7 @@ public class CreateRecipes {
                 properties, 4, 100);
         Recipe recipe2 = new Recipe("Pfirsichsalat", R.mipmap.pfirsichsalat_foreground, new String[]{"Schritt1", "Schritt2", "Schritt3"},
                 properties, 2, 20);
-        Recipe recipe3 = new Recipe("Kiwi-Mango Smoothie Bowl", R.mipmap.pfirsichsalat_foreground, new String[]{"Schritt1", "Schritt2", "Schritt3"},
+        Recipe recipe3 = new Recipe("Kiwi-Mango Smoothie Bowl", R.mipmap.kiwi_bowl_foreground, new String[]{"Schritt1", "Schritt2", "Schritt3"},
                 properties, 1, 300);
 
         return new Recipe[] {recipe1, recipe2, recipe3};
@@ -35,6 +35,7 @@ public class CreateRecipes {
         }
         return pictures;
     }
+
     public String[] getNames(){
         String names[] = new String[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {
@@ -42,6 +43,7 @@ public class CreateRecipes {
         }
         return names;
     }
+
     public String[] getRating(){
         String rating[] = new String[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {
