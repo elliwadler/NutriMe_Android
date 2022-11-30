@@ -61,6 +61,18 @@ public class CustomAdapter extends BaseAdapter {
         TextView properties2 = (TextView) view.findViewById(R.id.textView_properties2);
         TextView properties3 = (TextView) view.findViewById(R.id.textView_properties3);
 
+        ImageView spoon1 =  view.findViewById(R.id.img_spoon1);
+        ImageView spoon2 =  view.findViewById(R.id.img_spoon2);
+        ImageView spoon3 =  view.findViewById(R.id.img_spoon3);
+        ImageView spoon4 =  view.findViewById(R.id.img_spoon4);
+        ImageView spoon5 =  view.findViewById(R.id.img_spoon5);
+
+        spoon1.setImageResource( R.mipmap.spoon_filled_foreground);
+        spoon2.setImageResource( R.mipmap.spoon_filled_foreground);
+        spoon3.setImageResource( R.mipmap.spoon_empty_foreground);
+        spoon4.setImageResource( R.mipmap.spoon_empty_foreground);
+        spoon5.setImageResource( R.mipmap.spoon_empty_foreground);
+
         String[] value = (String[]) properties_List.get(i);
 
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
