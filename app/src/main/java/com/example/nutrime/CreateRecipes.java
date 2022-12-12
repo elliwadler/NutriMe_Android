@@ -24,11 +24,17 @@ public class CreateRecipes {
         ingredients.add(new String[]{"Zwiebeln","3 Stück"});
         ingredients.add(new String[]{"Knoblauchzehen","2 Stück"});
         ingredients.add(new String[]{"Tomaten","4 Stück"});
+        ingredients.add(new String[]{"Olivenöl","5 Esslöffel"});
+        ingredients.add(new String[]{"Gemüsebrühe","250 ml"});
+        ingredients.add(new String[]{"Paprikapulver","1 Esslöffel"});
+        ingredients.add(new String[]{"Kümmel","1/2 Esslöffel"});
+        ingredients.add(new String[]{"Tomatenmark","4 Esslöffel"});
+        ingredients.add(new String[]{"Petersilie","etwas"});
 
         String[] description = {
-                "step1 -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                , "step2 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                , "step3 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."};
+                "Paprika waschen, entkernen, grob würfeln. Zwiebeln schälen und in Streifen oder Ringe schneiden. Knoblauchzehen schälen und sehr fein hacken. Tomaten zerkleinern. Gulasch-Fleisch in zirka 3 cm große Würfel schneiden."
+                , "Ofen auf 200 Grad Ober/Unterhitze vorheizen. In der Zwischenzeit das Öl in einer großen Pfanne stark erhitzen. Zwiebeln, Knoblauch und kurz danach das Fleisch scharf darin anbraten und mit der Gemüsebrühe ablöschen. Paprika, Tomaten, Tomatenmark, Salz, Paprikagewürz und Kümmel hinzufügen."
+                , "Gulasch im heißen Ofen auf der untersten Schiene zirka 2 Stunden schmoren lassen. Das Gulaschfleisch ist fertig, wenn es sich mit einem Löffel oder zwei Gabeln ohne Widerstand zerteilen lässt. Sauce evtl. mit Salz, Pfeffer, Chilli nachwürzen."};
 
         Properties properties = new Properties(false, false, true, false, true, false, true, false);
 
