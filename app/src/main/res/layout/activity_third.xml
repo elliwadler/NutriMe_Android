@@ -23,9 +23,10 @@
     android:id="@+id/tv_rezept_name"
     android:layout_width="220dp"
     android:layout_height="70dp"
-    android:text="Rezep Name"
+    android:text="Rezept Name"
     android:layout_margin="10dp"
     android:textSize="24dp"
+        android:textColor="#000000"
     />
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,9 +34,10 @@
             android:orientation="vertical"
             >
         <include layout="@layout/activity_spoons"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"/>
             <TextView
                 android:id="@+id/tv_duration"
                 android:layout_width="150dp"
@@ -51,13 +53,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zutaten"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
         android:textSize="20dp"
+        android:textColor="#000000"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
         <LinearLayout
             android:id="@+id/ll_ingredients_points"
             android:layout_width="20dp"
@@ -86,14 +91,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zubereitung"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
         android:textSize="20dp"
+        android:textColor="#000000"
         />
     <LinearLayout
         android:id="@+id/ll_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
         <LinearLayout
             android:id="@+id/ll_description_text"
             android:layout_width="match_parent"

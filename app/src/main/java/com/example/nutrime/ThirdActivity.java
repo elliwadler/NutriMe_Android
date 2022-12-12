@@ -3,6 +3,7 @@ package com.example.nutrime;
 import static java.lang.Integer.valueOf;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Picture;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -33,6 +34,7 @@ public class ThirdActivity extends AppCompatActivity {
 
         Recipe recipe = recipes.getRecipeName(name);
 
+        int rating = recipe.getRating();
 
         ImageView spoon1 =  findViewById(R.id.img_spoon1);
         ImageView spoon2 =  findViewById(R.id.img_spoon2);
@@ -41,10 +43,28 @@ public class ThirdActivity extends AppCompatActivity {
         ImageView spoon5 =  findViewById(R.id.img_spoon5);
 
         spoon1.setImageResource( R.mipmap.spoon_filled_foreground);
-        spoon2.setImageResource( R.mipmap.spoon_filled_foreground);
-        spoon3.setImageResource( R.mipmap.spoon_empty_foreground);
+        spoon2.setImageResource(R.mipmap.spoon_empty_foreground);
+        spoon3.setImageResource(R.mipmap.spoon_empty_foreground);
         spoon4.setImageResource( R.mipmap.spoon_empty_foreground);
         spoon5.setImageResource( R.mipmap.spoon_empty_foreground);
+        if (rating > 1) {
+            spoon2.setImageResource(R.mipmap.spoon_filled_foreground);
+            spoon3.setImageResource(R.mipmap.spoon_empty_foreground);
+            spoon4.setImageResource( R.mipmap.spoon_empty_foreground);
+            spoon5.setImageResource( R.mipmap.spoon_empty_foreground);
+        }
+        if (rating > 2) {
+            spoon3.setImageResource(R.mipmap.spoon_filled_foreground);
+            spoon4.setImageResource( R.mipmap.spoon_empty_foreground);
+            spoon5.setImageResource( R.mipmap.spoon_empty_foreground);
+        }
+        if (rating > 3) {
+            spoon4.setImageResource(R.mipmap.spoon_filled_foreground);
+            spoon5.setImageResource( R.mipmap.spoon_empty_foreground);
+        }
+        if (rating > 4) {
+            spoon5.setImageResource(R.mipmap.spoon_filled_foreground);
+        }
 
         ImageView picture = findViewById(R.id.iv_rezept_bild);
         picture.setImageResource( recipe.getPicture());
@@ -79,6 +99,9 @@ public class ThirdActivity extends AppCompatActivity {
             textView_name.setLayoutParams(params);
             textView_amount.setLayoutParams(params);
 
+            textView_name.setTextColor(Color.parseColor("#000000"));
+            textView_amount.setTextColor(Color.parseColor("#000000"));
+
             LinearLayout.LayoutParams params_points = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             params_points.setMargins(40,20,0,23);
             params_points.height = 20;
@@ -95,12 +118,16 @@ public class ThirdActivity extends AppCompatActivity {
             linearLayout_description_text.addView(textView);
 
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            params.setMargins(50,0,50,50);
+            params.setMargins(20,0,20,50);
             textView.setLayoutParams(params);
+
+            textView.setTextColor(Color.parseColor("#000000"));
+
         }
 
         String time = recipe.getDuration();
         TextView time_tv =  findViewById(R.id.tv_duration);
         time_tv.setText(time);
+        time_tv.setTextColor(Color.parseColor("#000000"));
     }
 }
