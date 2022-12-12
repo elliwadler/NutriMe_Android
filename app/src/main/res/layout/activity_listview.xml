@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
          />
 
     <LinearLayout
@@ -102,7 +102,8 @@
             android:text="Rating"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent" />
-        <include layout="@layout/activity_spoons" />
+        <include layout="@layout/activity_spoons"
+            />
         <TextView
             android:id="@+id/textView_timing"
             android:layout_width="wrap_content"

@@ -3,42 +3,35 @@
     android:layout_width="100dp"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layout_marginLeft="-15dp"
     >
     <ImageView
         android:id="@+id/img_spoon1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-15dp"
         android:layout_weight="5"
          />
     <ImageView
         android:id="@+id/img_spoon2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-15dp"
         android:layout_weight="5"
-        android:src="@mipmap/gulasch"
          />
     <ImageView
         android:id="@+id/img_spoon3"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-15dp"
         android:layout_weight="5"
         />
     <ImageView
         android:id="@+id/img_spoon4"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-15dp"
         android:layout_weight="5"
        />
     <ImageView
         android:id="@+id/img_spoon5"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-15dp"
         android:layout_weight="5"
         />
 </LinearLayout>

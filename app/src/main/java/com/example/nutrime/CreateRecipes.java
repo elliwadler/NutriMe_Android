@@ -6,27 +6,50 @@ import android.os.Bundle;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CreateRecipes {
 
     Recipe recipes[];
+    public static CreateRecipes instance = new CreateRecipes();
 
-    public CreateRecipes() {
+    private CreateRecipes() {
        this.recipes = this.load();
     }
 
     private Recipe[] load() {
+        List<String[]> ingredients = new ArrayList<String[]>();
+        ingredients.add(new String[]{"Rinderfleisch","750 Gramm"});
+        ingredients.add(new String[]{"Paprikaschoten","4 Stück"});
+        ingredients.add(new String[]{"Zwiebeln","3 Stück"});
+        ingredients.add(new String[]{"Knoblauchzehen","2 Stück"});
+        ingredients.add(new String[]{"Tomaten","4 Stück"});
+
+        String[] description = {
+                "step1 -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                , "step2 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                , "step3 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."};
+
         Properties properties = new Properties(false, false, true, false, true, false, true, false);
 
-        Recipe recipe1 = new Recipe("Paprika-Gulasch", R.mipmap.gulasch_foreground, new String[]{"Schritt1", "Schritt2", "Schritt3"},
-                properties, 4, 100);
+        Recipe recipe1 = new Recipe("Paprika-Gulasch", R.mipmap.gulasch_foreground, description,
+                properties, 4, 100, ingredients);
         Recipe recipe2 = new Recipe("Pfirsichsalat", R.mipmap.pfirsichsalat_foreground, new String[]{"Schritt1", "Schritt2", "Schritt3"},
-                properties, 2, 20);
+                properties, 2, 20, ingredients);
         Recipe recipe3 = new Recipe("Kiwi-Mango Smoothie Bowl", R.mipmap.kiwi_bowl_foreground, new String[]{"Schritt1", "Schritt2", "Schritt3"},
-                properties, 1, 300);
+                properties, 1, 300, ingredients);
 
         return new Recipe[] {recipe1, recipe2, recipe3};
     }
+
+    public static CreateRecipes getInstance() {
+        if (instance == null) {
+            instance = new CreateRecipes();
+        }
+        return instance;
+    }
+
+
 
     public int[] getPictures(){
         int pictures[] = new int[this.recipes.length];
@@ -54,18 +77,7 @@ public class CreateRecipes {
     public String[] getTime(){
         String time_string[] = new String[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {
-            String output ="";
-            long h = recipes[i].getDuration() / 60;
-            long m = recipes[i].getDuration() % 60;
-
-            if(h != 0 && m!=0)
-                output = h+" Std. "+m+" Min.";
-            else if(h == 0 && m!=0)
-                output = m+" Min.";
-            else
-                output = h+" Std. ";
-
-            time_string[i] = output;
+            time_string[i] = recipes[i].getDuration();
         }
         return time_string;
     }

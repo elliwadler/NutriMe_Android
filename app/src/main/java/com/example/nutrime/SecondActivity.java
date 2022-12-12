@@ -9,15 +9,16 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
-
 public class SecondActivity extends AppCompatActivity {
 
-    CreateRecipes recipes = new CreateRecipes();
+    CreateRecipes recipes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        recipes = CreateRecipes.getInstance();
 
         LoadDataInListView();
 
