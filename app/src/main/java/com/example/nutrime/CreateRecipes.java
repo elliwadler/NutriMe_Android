@@ -3,6 +3,10 @@ package com.example.nutrime;
 import android.media.Image;
 import android.os.Bundle;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
