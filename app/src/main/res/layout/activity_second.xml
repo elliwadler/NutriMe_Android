@@ -15,7 +15,18 @@
         android:textSize="20dp"
         />
 
-
+    <include layout="@layout/activity_searchresult"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"/>
+    <include layout="@layout/activity_searchresult"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"/>
+    <include layout="@layout/activity_searchresult"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"/>
     <TextView
         android:id="@+id/tv_recipes_header"
         android:layout_width="wrap_content"
