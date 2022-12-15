@@ -6,25 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView4"
+        android:name="com.example.nutrime.page2"
+        android:layout_width="409dp"
+        android:layout_height="1323dp"
+        android:layout_marginTop="-430dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_page2" />
 
-    <Button
-        android:id="@+id/Button2screen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.nutrime.page1"
+        android:layout_width="409dp"
+        android:layout_height="95dp"
+        android:rotationX="0"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragmentContainerView4"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:layout_margin="20dp"
-        android:text="2 screen"
-        android:onClick="switchScreen"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_page1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
