@@ -104,7 +104,10 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="000000" />
+                                                <entry key="color" value="a1dca1" />
+                                                <entry key="scalingPercent" value="80" />
+                                                <entry key="text" value="" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -115,7 +118,10 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="000000" />
+                                                <entry key="color" value="a1dca1" />
+                                                <entry key="scalingPercent" value="80" />
+                                                <entry key="text" value="" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -126,8 +132,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="outputName" value="spoon_empty" />
+                                      <entry key="backgroundColor" value="a1e0a6" />
+                                      <entry key="foregroundAssetType" value="TEXT" />
+                                      <entry key="outputName" value="bg_rounded_green" />
                                     </map>
                                   </option>
                                 </PersistentState>
