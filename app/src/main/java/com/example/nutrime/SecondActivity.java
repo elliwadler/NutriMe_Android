@@ -1,5 +1,6 @@
 package com.example.nutrime;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -95,12 +96,64 @@ public class SecondActivity extends AppCompatActivity {
                 TextView textView_yes = new TextView(this);
                 textView_yes.setText("Eisen");
                 textView_yes.setTextSize(14);
+                textView_yes.setClickable(true);
+                int finalI = i;
+                textView_yes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        LinearLayout linearLayout_food = (LinearLayout) findViewById(R.id.ll_food);
+
+                        if(linearLayout_food.getVisibility()== View.GONE) {
+                            linearLayout_food.animate()
+                                    .translationY(70)
+                                    .alpha(1.0f)
+                                    .setDuration(400);
+                            linearLayout_food.setVisibility(View.VISIBLE);
+                        }
+                        else {
+                            linearLayout_food.animate()
+                                    .translationY(0)
+                                    .alpha(0.0f)
+                                    .setDuration(400);
+                            linearLayout_food.setVisibility(View.GONE);
+                        }
+                    }
+                });
                 textView_yes.setBackgroundColor(getResources().getColor(R.color.bg_rounded_green_background));
                 textView_yes.setPadding(20, 20, 20, 20);
                 linearLayout_yes.addView(textView_yes);
                 textView_yes.setLayoutParams(params);
             }
         }
+
+     /*     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/green"
+        android:text="Nähwerte"
+        android:textSize="16dp"
+        android:shadowRadius="0"
+        android:onClick="showLayout"
+                />
+
+        <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/green"
+        android:onClick="showLayout"
+        android:src="@drawable/bg_arrow_foreground" />
+
+    </LinearLayout>*/
     }
     public void switchScreen(int position){
                 String name = recipes.getRecipe(position).getName();
