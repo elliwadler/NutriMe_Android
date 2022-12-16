@@ -51,33 +51,82 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/green"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_nutrients"
-            android:layout_width="95dp"
+        <android.widget.Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/green"
+            android:text="Nähwerte"
+            android:textSize="16dp"
+            android:shadowRadius="0"
+            android:onClick="showLayout"
+             />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/green"
+            android:onClick="showLayout"
+            android:src="@drawable/bg_arrow_foreground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_nutrients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:animateLayoutChanges="true"
+        android:background="@color/beige">
+        <LinearLayout
+            android:id="@+id/ll_nutrients_column1"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/bg_rounded_green_background"
-            android:padding="5dp"
-            android:text="Nährwerte"
-            android:textColor="#000000"
-            android:textSize="16dp" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="31dp"
-            android:maxHeight="0.5dp"
-            android:src="@mipmap/bg_arrow" />
+        <LinearLayout
+            android:id="@+id/ll_nutrients_column2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+        </LinearLayout>
 
-
+        <LinearLayout
+            android:id="@+id/ll_nutrients_column3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+        </LinearLayout>
     </LinearLayout>
     <TextView
         android:id="@+id/tv_rezept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zutaten"
+        android:layout_marginTop="45dp"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="10dp"
         android:textSize="20dp"

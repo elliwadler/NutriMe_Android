@@ -68,7 +68,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\ellil\AppData\Local\Temp\baseline_attach_money_24.xml" />
+                                                <entry key="imagePath" value="C:\Users\ellil\AppData\Local\Temp\baseline_arrow_drop_down_24.xml" />
+                                                <entry key="scalingPercent" value="16" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -80,7 +81,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/attach_money/baseline_attach_money_24.xml" />
+                                                <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/arrow_drop_down/baseline_arrow_drop_down_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -106,7 +107,6 @@
                                               <map>
                                                 <entry key="color" value="a1dca1" />
                                                 <entry key="scalingPercent" value="80" />
-                                                <entry key="text" value="" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -120,7 +120,6 @@
                                               <map>
                                                 <entry key="color" value="a1dca1" />
                                                 <entry key="scalingPercent" value="80" />
-                                                <entry key="text" value="" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -132,9 +131,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="a1e0a6" />
-                                      <entry key="foregroundAssetType" value="TEXT" />
-                                      <entry key="outputName" value="bg_rounded_green" />
+                                      <entry key="backgroundColor" value="a8e39d" />
+                                      <entry key="foregroundAssetType" value="CLIP_ART" />
+                                      <entry key="outputName" value="bg_arrow" />
                                     </map>
                                   </option>
                                 </PersistentState>

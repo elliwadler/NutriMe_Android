@@ -2,12 +2,16 @@ package com.example.nutrime;
 
 import static java.lang.Integer.valueOf;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Picture;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class ThirdActivity extends AppCompatActivity {
 
@@ -129,5 +134,53 @@ public class ThirdActivity extends AppCompatActivity {
         TextView time_tv =  findViewById(R.id.tv_duration);
         time_tv.setText(time);
         time_tv.setTextColor(Color.parseColor("#000000"));
+
+
+        LinearLayout linearLayout_nutrients = (LinearLayout) findViewById(R.id.ll_nutrients_column1);
+        LinearLayout linearLayout_nutrients_amount = (LinearLayout) findViewById(R.id.ll_nutrients_column2);
+        LinearLayout linearLayout_nutrients_percent = (LinearLayout) findViewById(R.id.ll_nutrients_column3);
+
+        for (int i = 0; i < 8; i++) {
+                TextView textView = new TextView(this);
+                textView.setText("Eisen");
+                textView.setTextSize(14);
+                textView.setTextColor(Color.parseColor("#000000"));
+                textView.setPadding(20, 20, 20, 20);
+                linearLayout_nutrients.addView(textView);
+
+                TextView textView1 = new TextView(this);
+                textView1.setText("4 mg");
+                textView1.setTextSize(14);
+                textView1.setTextColor(Color.parseColor("#000000"));
+                textView1.setPadding(20, 20, 20, 20);
+                linearLayout_nutrients_amount.addView(textView1);
+
+                TextView textView2 = new TextView(this);
+                textView2.setText("= 100%");
+                textView2.setTextSize(14);
+                textView2.setTextColor(Color.parseColor("#000000"));
+                textView2.setPadding(20, 20, 20, 20);
+                linearLayout_nutrients_percent.addView(textView2);
+        }
+    }
+
+    public void showLayout(View view){
+
+        LinearLayout linearLayout_nutrients = (LinearLayout) findViewById(R.id.ll_nutrients);
+
+        if(linearLayout_nutrients.getVisibility()== View.GONE) {
+            linearLayout_nutrients.animate()
+                    .translationY(70)
+                    .alpha(1.0f)
+                    .setDuration(400);
+            linearLayout_nutrients.setVisibility(View.VISIBLE);
+        }
+        else {
+            linearLayout_nutrients.animate()
+                    .translationY(0)
+                    .alpha(0.0f)
+                    .setDuration(400);
+            linearLayout_nutrients.setVisibility(View.GONE);
+        }
     }
 }
