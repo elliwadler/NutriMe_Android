@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.nutrime.enums.MustHaves;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -101,8 +102,8 @@ public class SecondActivity extends AppCompatActivity {
         linearLayout_yes1.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout_yes_origin.addView(linearLayout_yes1);
 
-        /*for (int i = 0; i < mustHaves.size() ; i++) {
-            if (i < 4) {
+        for (int i = 0; i < mustHaves.size() ; i++) {
+
                 String name = mustHaves.get(i).toString();
                 TextView textView_yes = new TextView(this);
                 textView_yes.setText(name);
@@ -112,11 +113,17 @@ public class SecondActivity extends AppCompatActivity {
                 textView_yes.setOnClickListener(this::onClick);
                 textView_yes.setBackgroundColor(getResources().getColor(R.color.bg_rounded_green_background));
                 textView_yes.setPadding(20, 20, 20, 20);
-                textView_yes.setId(i);
-                linearLayout_yes.addView(textView_yes);
-                textView_yes.setLayoutParams(params);
-            }
-        }*/
+
+                textView_yes.setId(getIDButton(name));
+
+                if (i < 4) {
+                    linearLayout_yes.addView(textView_yes);
+                }
+                if (i >= 4) {
+                    linearLayout_yes1.addView(textView_yes);
+                }
+            textView_yes.setLayoutParams(params);
+        }
     }
     public void switchScreen(int position){
                 String name = recipes.getRecipe(position).getName();
@@ -141,6 +148,37 @@ public class SecondActivity extends AppCompatActivity {
         simpleList = (ListView) findViewById(R.id.simpleListView);
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), recipe_name_List, recipe_rating_List, recipe_picture_List, recipe_properties_List, recipe_time_List);
         simpleList.setAdapter(customAdapter);
+    }
+
+    public int getIDButton(String name){
+        int id=0;
+        switch (name){
+            case ("Eisen"):
+                id=0;
+                break;
+            case ("Magnesium"):
+                id=1;
+                break;
+            case("Kalium"):
+                id=2;
+                break;
+            case("Calcium"):
+                id=3;
+                break;
+            case("Selen"):
+                id=4;
+                break;
+            case("Antioxidantien"):
+                id=5;
+                break;
+            case("Omega3"):
+                id=6;
+                break;
+            case("Natrium"):
+                id=7;
+                break;
+        }
+        return id;
     }
 
     public void onClick(View view) {
@@ -168,16 +206,28 @@ public class SecondActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case (0):
-                textView.setText(String.valueOf(0));
+                textView.setText("Eisen");
                 break;
             case (1):
-                textView.setText(String.valueOf(1));
+                textView.setText("Magensium");
                 break;
             case (2):
-                textView.setText(String.valueOf(2));
+                textView.setText("Kalium");
                 break;
             case (3):
-                textView.setText(String.valueOf(3));
+                textView.setText("Calcium");
+                break;
+            case (4):
+                textView.setText("Selen");
+                break;
+            case (5):
+                textView.setText("Antioxidantien");
+                break;
+            case (6):
+                textView.setText("Omega3");
+                break;
+            case (7):
+                textView.setText("Natrium");
                 break;
         }
         linearLayout_food.addView(textView);

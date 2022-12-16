@@ -1,2 +1,23 @@
 [
+  {
+    "should-eat": [
+      "Leberwurst",
+      "Tofu",
+      "Linsen",
+      "Kiwi",
+      "rotes Fleisch",
+      "Mangold"
+    ],
+    "should-not-eat": [
+      "Käse",
+      "Kaffe",
+      "Rotwein",
+      "Milch"
+    ],
+    "helps": [
+      "Orange",
+      "Zitrone"
+    ],
+    "name": ["Eisen"]
+  }
 ]

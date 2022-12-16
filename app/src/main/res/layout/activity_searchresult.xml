@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         tools:ignore="MissingConstraints"
         android:id="@+id/searchresult_yellow"
-        android:orientation="horizontal">
+        android:orientation="vertical">
     </LinearLayout>
 
     <LinearLayout
@@ -30,7 +30,7 @@
         android:layout_height="match_parent"
         tools:ignore="MissingConstraints"
         android:id="@+id/searchresult_green"
-        android:orientation="horizontal">
+        android:orientation="vertical">
     </LinearLayout>
     </LinearLayout>
 
