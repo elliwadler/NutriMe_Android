@@ -101,10 +101,11 @@ public class SecondActivity extends AppCompatActivity {
         linearLayout_yes1.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout_yes_origin.addView(linearLayout_yes1);
 
-        for (int i = 0; i <4 ; i++) {
+        /*for (int i = 0; i < mustHaves.size() ; i++) {
             if (i < 4) {
+                String name = mustHaves.get(i).toString();
                 TextView textView_yes = new TextView(this);
-                textView_yes.setText("Eisen");
+                textView_yes.setText(name);
                 textView_yes.setTextSize(14);
                 textView_yes.setClickable(true);
                 number = i;
@@ -115,7 +116,7 @@ public class SecondActivity extends AppCompatActivity {
                 linearLayout_yes.addView(textView_yes);
                 textView_yes.setLayoutParams(params);
             }
-        }
+        }*/
     }
     public void switchScreen(int position){
                 String name = recipes.getRecipe(position).getName();

@@ -20,8 +20,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.nutrime.enums.MustHaves;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class ThirdActivity extends AppCompatActivity {
@@ -135,21 +138,26 @@ public class ThirdActivity extends AppCompatActivity {
         time_tv.setText(time);
         time_tv.setTextColor(Color.parseColor("#000000"));
 
+        Map<MustHaves,Float> must_haves = recipe.getMustHaves();
 
         LinearLayout linearLayout_nutrients = (LinearLayout) findViewById(R.id.ll_nutrients_column1);
         LinearLayout linearLayout_nutrients_amount = (LinearLayout) findViewById(R.id.ll_nutrients_column2);
         LinearLayout linearLayout_nutrients_percent = (LinearLayout) findViewById(R.id.ll_nutrients_column3);
 
-        for (int i = 0; i < 8; i++) {
+        for (Map.Entry<MustHaves, Float> entry : must_haves.entrySet()) {
+                String key = entry.getKey().toString();
+
                 TextView textView = new TextView(this);
-                textView.setText("Eisen");
+                textView.setText(key);
                 textView.setTextSize(14);
                 textView.setTextColor(Color.parseColor("#000000"));
                 textView.setPadding(20, 20, 20, 20);
                 linearLayout_nutrients.addView(textView);
 
+                String val =  String.valueOf(entry.getValue());
+
                 TextView textView1 = new TextView(this);
-                textView1.setText("4 mg");
+                textView1.setText(val + " mg");
                 textView1.setTextSize(14);
                 textView1.setTextColor(Color.parseColor("#000000"));
                 textView1.setPadding(20, 20, 20, 20);

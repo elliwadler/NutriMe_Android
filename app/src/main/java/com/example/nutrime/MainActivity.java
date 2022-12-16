@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
         Gson gson = new Gson();
 
+        System.out.println(mustHaves.get(0));
+
         Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
         //It is hard to put enums and list of custom types, so I just serialize everything to String
         intent.putExtra("mustHavesList", gson.toJson(mustHaves));
