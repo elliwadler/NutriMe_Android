@@ -53,14 +53,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:background="@color/green"
+        android:background="@color/bg_rounded_green_background"
         android:orientation="horizontal">
 
         <android.widget.Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:backgroundTint="@color/green"
+            android:backgroundTint="@color/bg_rounded_green_background"
             android:text="Nähwerte"
             android:textSize="16dp"
             android:shadowRadius="0"
@@ -86,8 +86,7 @@
         android:layout_marginRight="15dp"
         android:orientation="horizontal"
         android:visibility="gone"
-        android:animateLayoutChanges="true"
-        android:background="@color/beige">
+        android:animateLayoutChanges="true">
         <LinearLayout
             android:id="@+id/ll_nutrients_column1"
             android:layout_width="150dp"

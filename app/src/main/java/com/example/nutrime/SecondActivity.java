@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class SecondActivity extends AppCompatActivity {
 
     CreateRecipes recipes;
+    public int number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,63 +98,15 @@ public class SecondActivity extends AppCompatActivity {
                 textView_yes.setText("Eisen");
                 textView_yes.setTextSize(14);
                 textView_yes.setClickable(true);
-                int finalI = i;
-                textView_yes.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        LinearLayout linearLayout_food = (LinearLayout) findViewById(R.id.ll_food);
-
-                        if(linearLayout_food.getVisibility()== View.GONE) {
-                            linearLayout_food.animate()
-                                    .translationY(70)
-                                    .alpha(1.0f)
-                                    .setDuration(400);
-                            linearLayout_food.setVisibility(View.VISIBLE);
-                        }
-                        else {
-                            linearLayout_food.animate()
-                                    .translationY(0)
-                                    .alpha(0.0f)
-                                    .setDuration(400);
-                            linearLayout_food.setVisibility(View.GONE);
-                        }
-                    }
-                });
+                number = i;
+                textView_yes.setOnClickListener(this::onClick);
                 textView_yes.setBackgroundColor(getResources().getColor(R.color.bg_rounded_green_background));
                 textView_yes.setPadding(20, 20, 20, 20);
+                textView_yes.setId(i);
                 linearLayout_yes.addView(textView_yes);
                 textView_yes.setLayoutParams(params);
             }
         }
-
-     /*     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:background="@color/green"
-        android:orientation="horizontal">
-
-        <android.widget.Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:backgroundTint="@color/green"
-        android:text="Nähwerte"
-        android:textSize="16dp"
-        android:shadowRadius="0"
-        android:onClick="showLayout"
-                />
-
-        <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="25dp"
-        android:layout_height="match_parent"
-        android:backgroundTint="@color/green"
-        android:onClick="showLayout"
-        android:src="@drawable/bg_arrow_foreground" />
-
-    </LinearLayout>*/
     }
     public void switchScreen(int position){
                 String name = recipes.getRecipe(position).getName();
@@ -178,5 +131,46 @@ public class SecondActivity extends AppCompatActivity {
         simpleList = (ListView) findViewById(R.id.simpleListView);
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), recipe_name_List, recipe_rating_List, recipe_picture_List, recipe_properties_List, recipe_time_List);
         simpleList.setAdapter(customAdapter);
+    }
+
+    public void onClick(View view) {
+        LinearLayout linearLayout_food = (LinearLayout) findViewById(R.id.ll_food);
+        linearLayout_food.removeAllViews();
+
+        if(linearLayout_food.getVisibility()== View.GONE) {
+            linearLayout_food.animate()
+                    .translationY(70)
+                    .alpha(1.0f)
+                    .setDuration(400);
+            linearLayout_food.setVisibility(View.VISIBLE);
+        }
+        else {
+            linearLayout_food.animate()
+                    .translationY(0)
+                    .alpha(0.0f)
+                    .setDuration(400);
+            linearLayout_food.setVisibility(View.GONE);
+        }
+
+        TextView textView = new TextView(this);
+        textView.setTextSize(14);
+        textView.setPadding(20, 20, 20, 20);
+
+        switch (view.getId()) {
+            case (0):
+                textView.setText(String.valueOf(0));
+                break;
+            case (1):
+                textView.setText(String.valueOf(1));
+                break;
+            case (2):
+                textView.setText(String.valueOf(2));
+                break;
+            case (3):
+                textView.setText(String.valueOf(3));
+                break;
+        }
+        linearLayout_food.addView(textView);
+
     }
 }
