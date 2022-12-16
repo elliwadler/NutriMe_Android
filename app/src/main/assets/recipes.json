@@ -1,0 +1,209 @@
+[
+  {
+    "description": [
+      "Paprika waschen, entkernen, grob würfeln. Zwiebeln schälen und in Streifen oder Ringe schneiden. Knoblauchzehen schälen und sehr fein hacken. Tomaten zerkleinern. Gulasch-Fleisch in zirka 3 cm große Würfel schneiden.",
+      "Ofen auf 200 Grad Ober/Unterhitze vorheizen. In der Zwischenzeit das Öl in einer großen Pfanne stark erhitzen. Zwiebeln, Knoblauch und kurz danach das Fleisch scharf darin anbraten und mit der Gemüsebrühe ablöschen. Paprika, Tomaten, Tomatenmark, Salz, Paprikagewürz und Kümmel hinzufügen.",
+      "Gulasch im heißen Ofen auf der untersten Schiene zirka 2 Stunden schmoren lassen. Das Gulaschfleisch ist fertig, wenn es sich mit einem Löffel oder zwei Gabeln ohne Widerstand zerteilen lässt. Sauce evtl. mit Salz, Pfeffer, Chilli nachwürzen."
+    ],
+    "duration": 100,
+    "ingredints": [
+      [
+        "Rinderfleisch",
+        "750 Gramm"
+      ],
+      [
+        "Paprikaschoten",
+        "4 Stück"
+      ],
+      [
+        "Zwiebeln",
+        "3 Stück"
+      ],
+      [
+        "Knoblauchzehen",
+        "2 Stück"
+      ],
+      [
+        "Tomaten",
+        "4 Stück"
+      ],
+      [
+        "Olivenöl",
+        "5 Esslöffel"
+      ],
+      [
+        "Gemüsebrühe",
+        "250 ml"
+      ],
+      [
+        "Paprikapulver",
+        "1 Esslöffel"
+      ],
+      [
+        "Kümmel",
+        "1/2 Esslöffel"
+      ],
+      [
+        "Tomatenmark",
+        "4 Esslöffel"
+      ],
+      [
+        "Petersilie",
+        "etwas"
+      ]
+    ],
+    "name": "Paprika-Gulasch",
+    "picture": 2131558402,
+    "properties": {
+      "must_haves": {
+        "Selen": true,
+        "Calcium": false,
+        "Natrium": false,
+        "Eisen": false,
+        "Magnesium": false,
+        "Antioxidantien": false,
+        "Omega-3": true,
+        "Kalium": true
+      }
+    },
+    "rating": 4
+  },
+  {
+    "description": [
+      "Schritt1",
+      "Schritt2",
+      "Schritt3"
+    ],
+    "duration": 20,
+    "ingredints": [
+      [
+        "Rinderfleisch",
+        "750 Gramm"
+      ],
+      [
+        "Paprikaschoten",
+        "4 Stück"
+      ],
+      [
+        "Zwiebeln",
+        "3 Stück"
+      ],
+      [
+        "Knoblauchzehen",
+        "2 Stück"
+      ],
+      [
+        "Tomaten",
+        "4 Stück"
+      ],
+      [
+        "Olivenöl",
+        "5 Esslöffel"
+      ],
+      [
+        "Gemüsebrühe",
+        "250 ml"
+      ],
+      [
+        "Paprikapulver",
+        "1 Esslöffel"
+      ],
+      [
+        "Kümmel",
+        "1/2 Esslöffel"
+      ],
+      [
+        "Tomatenmark",
+        "4 Esslöffel"
+      ],
+      [
+        "Petersilie",
+        "etwas"
+      ]
+    ],
+    "name": "Pfirsichsalat",
+    "picture": 2131558410,
+    "properties": {
+      "must_haves": {
+        "Selen": true,
+        "Calcium": false,
+        "Natrium": false,
+        "Eisen": false,
+        "Magnesium": false,
+        "Antioxidantien": false,
+        "Omega-3": true,
+        "Kalium": true
+      }
+    },
+    "rating": 2
+  },
+  {
+    "description": [
+      "Schritt1",
+      "Schritt2",
+      "Schritt3"
+    ],
+    "duration": 300,
+    "ingredints": [
+      [
+        "Rinderfleisch",
+        "750 Gramm"
+      ],
+      [
+        "Paprikaschoten",
+        "4 Stück"
+      ],
+      [
+        "Zwiebeln",
+        "3 Stück"
+      ],
+      [
+        "Knoblauchzehen",
+        "2 Stück"
+      ],
+      [
+        "Tomaten",
+        "4 Stück"
+      ],
+      [
+        "Olivenöl",
+        "5 Esslöffel"
+      ],
+      [
+        "Gemüsebrühe",
+        "250 ml"
+      ],
+      [
+        "Paprikapulver",
+        "1 Esslöffel"
+      ],
+      [
+        "Kümmel",
+        "1/2 Esslöffel"
+      ],
+      [
+        "Tomatenmark",
+        "4 Esslöffel"
+      ],
+      [
+        "Petersilie",
+        "etwas"
+      ]
+    ],
+    "name": "Kiwi-Mango Smoothie Bowl",
+    "picture": 2131558407,
+    "properties": {
+      "must_haves": {
+        "Selen": true,
+        "Calcium": false,
+        "Natrium": false,
+        "Eisen": false,
+        "Magnesium": false,
+        "Antioxidantien": false,
+        "Omega-3": true,
+        "Kalium": true
+      }
+    },
+    "rating": 1
+  }
+]

@@ -1,20 +1,10 @@
 package com.example.nutrime;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.io.File;
-import java.io.IOException;
-import com.example.nutrime.R;
-
-import com.google.android.material.button.MaterialButton;
-
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,14 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       /* ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            objectMapper.writeValue(new File("target/recipe.json"),new test(1,2));
-            System.out.println("test");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
+        RecipeDatabase.Init(getAssets());
     }
 
     public void switchScreen(View view){
