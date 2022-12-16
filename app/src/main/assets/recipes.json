@@ -6,7 +6,7 @@
       "Gulasch im heißen Ofen auf der untersten Schiene zirka 2 Stunden schmoren lassen. Das Gulaschfleisch ist fertig, wenn es sich mit einem Löffel oder zwei Gabeln ohne Widerstand zerteilen lässt. Sauce evtl. mit Salz, Pfeffer, Chilli nachwürzen."
     ],
     "duration": 100,
-    "ingredints": [
+    "ingredients": [
       [
         "Rinderfleisch",
         "750 Gramm"
@@ -52,158 +52,278 @@
         "etwas"
       ]
     ],
-    "name": "Paprika-Gulasch",
-    "picture": 2131558402,
-    "properties": {
-      "must_haves": {
-        "Selen": true,
-        "Calcium": false,
-        "Natrium": false,
-        "Eisen": false,
-        "Magnesium": false,
-        "Antioxidantien": false,
-        "Omega-3": true,
-        "Kalium": true
-      }
+    "mustHaves": {
+      "Eisen": 10.0,
+      "Antioxidantien": 1.0,
+      "Omega3": 0.5,
+      "Magnesium": 7.0,
+      "Kalium": 5.0,
+      "Natrium": 4.0,
+      "Selen": 2.0,
+      "Calcium": 1.0
     },
+    "name": "Paprika-Gulasch",
+    "picture": 2131558408,
     "rating": 4
   },
   {
     "description": [
-      "Schritt1",
-      "Schritt2",
-      "Schritt3"
+      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
     ],
     "duration": 20,
-    "ingredints": [
+    "ingredients": [
       [
-        "Rinderfleisch",
+        "Zutat1",
         "750 Gramm"
       ],
       [
-        "Paprikaschoten",
+        "Zutat2",
         "4 Stück"
       ],
       [
-        "Zwiebeln",
+        "Zutat3",
         "3 Stück"
       ],
       [
-        "Knoblauchzehen",
+        "Zutat4",
         "2 Stück"
       ],
       [
-        "Tomaten",
+        "Zutat5",
         "4 Stück"
       ],
       [
-        "Olivenöl",
+        "Zutat6",
         "5 Esslöffel"
       ],
       [
-        "Gemüsebrühe",
+        "Zutat7",
         "250 ml"
       ],
       [
-        "Paprikapulver",
+        "Zutat8",
         "1 Esslöffel"
       ],
       [
-        "Kümmel",
+        "Zutat9",
         "1/2 Esslöffel"
       ],
       [
-        "Tomatenmark",
+        "Zutat10",
         "4 Esslöffel"
       ],
       [
-        "Petersilie",
+        "Zutat11",
         "etwas"
       ]
     ],
-    "name": "Pfirsichsalat",
-    "picture": 2131558410,
-    "properties": {
-      "must_haves": {
-        "Selen": true,
-        "Calcium": false,
-        "Natrium": false,
-        "Eisen": false,
-        "Magnesium": false,
-        "Antioxidantien": false,
-        "Omega-3": true,
-        "Kalium": true
-      }
+    "mustHaves": {
+      "Eisen": 2.0,
+      "Antioxidantien": 3.0,
+      "Omega3": 1.0,
+      "Magnesium": 9.0,
+      "Kalium": 8.0,
+      "Natrium": 12.0,
+      "Selen": 3.0,
+      "Calcium": 10.0
     },
+    "name": "Pfirsichsalat",
+    "picture": 2131558416,
     "rating": 2
   },
   {
     "description": [
-      "Schritt1",
-      "Schritt2",
-      "Schritt3"
+      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
     ],
     "duration": 300,
-    "ingredints": [
+    "ingredients": [
       [
-        "Rinderfleisch",
+        "Zutat1",
         "750 Gramm"
       ],
       [
-        "Paprikaschoten",
+        "Zutat2",
         "4 Stück"
       ],
       [
-        "Zwiebeln",
+        "Zutat3",
         "3 Stück"
       ],
       [
-        "Knoblauchzehen",
+        "Zutat4",
         "2 Stück"
       ],
       [
-        "Tomaten",
+        "Zutat5",
         "4 Stück"
       ],
       [
-        "Olivenöl",
+        "Zutat6",
         "5 Esslöffel"
       ],
       [
-        "Gemüsebrühe",
+        "Zutat7",
         "250 ml"
       ],
       [
-        "Paprikapulver",
+        "Zutat8",
         "1 Esslöffel"
       ],
       [
-        "Kümmel",
+        "Zutat9",
         "1/2 Esslöffel"
       ],
       [
-        "Tomatenmark",
+        "Zutat10",
         "4 Esslöffel"
       ],
       [
-        "Petersilie",
+        "Zutat11",
         "etwas"
       ]
     ],
-    "name": "Kiwi-Mango Smoothie Bowl",
-    "picture": 2131558407,
-    "properties": {
-      "must_haves": {
-        "Selen": true,
-        "Calcium": false,
-        "Natrium": false,
-        "Eisen": false,
-        "Magnesium": false,
-        "Antioxidantien": false,
-        "Omega-3": true,
-        "Kalium": true
-      }
+    "mustHaves": {
+      "Eisen": 1.0,
+      "Antioxidantien": 6.0,
+      "Omega3": 14.0,
+      "Magnesium": 3.0,
+      "Kalium": 4.0,
+      "Natrium": 5.0,
+      "Selen": 5.0,
+      "Calcium": 6.0
     },
+    "name": "Kiwi-Mango Smoothie Bowl",
+    "picture": 2131558413,
+    "rating": 1
+  },
+  {
+    "description": [
+      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
+    ],
+    "duration": 300,
+    "ingredients": [
+      [
+        "Zutat1",
+        "750 Gramm"
+      ],
+      [
+        "Zutat2",
+        "4 Stück"
+      ],
+      [
+        "Zutat3",
+        "3 Stück"
+      ],
+      [
+        "Zutat4",
+        "2 Stück"
+      ],
+      [
+        "Zutat5",
+        "4 Stück"
+      ],
+      [
+        "Zutat6",
+        "5 Esslöffel"
+      ],
+      [
+        "Zutat7",
+        "250 ml"
+      ],
+      [
+        "Zutat8",
+        "1 Esslöffel"
+      ],
+      [
+        "Zutat9",
+        "1/2 Esslöffel"
+      ],
+      [
+        "Zutat10",
+        "4 Esslöffel"
+      ],
+      [
+        "Zutat11",
+        "etwas"
+      ]
+    ],
+    "mustHaves": {
+      "Eisen": 13.0,
+      "Antioxidantien": 6.0,
+      "Omega3": 1.0,
+      "Magnesium": 4.5,
+      "Kalium": 5.0,
+      "Natrium": 3.0,
+      "Selen": 2.5,
+      "Calcium": 3.0
+    },
+    "name": "vegetarisches eisenreiches Rezept",
+    "picture": 2131558413,
+    "rating": 1
+  },
+  {
+    "description": [
+      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
+    ],
+    "duration": 300,
+    "ingredients": [
+      [
+        "Zutat1",
+        "750 Gramm"
+      ],
+      [
+        "Zutat2",
+        "4 Stück"
+      ],
+      [
+        "Zutat3",
+        "3 Stück"
+      ],
+      [
+        "Zutat4",
+        "2 Stück"
+      ],
+      [
+        "Zutat5",
+        "4 Stück"
+      ],
+      [
+        "Zutat6",
+        "5 Esslöffel"
+      ],
+      [
+        "Zutat7",
+        "250 ml"
+      ],
+      [
+        "Zutat8",
+        "1 Esslöffel"
+      ],
+      [
+        "Zutat9",
+        "1/2 Esslöffel"
+      ],
+      [
+        "Zutat10",
+        "4 Esslöffel"
+      ],
+      [
+        "Zutat11",
+        "etwas"
+      ]
+    ],
+    "mustHaves": {
+      "Eisen": 1.0,
+      "Antioxidantien": 7.0,
+      "Omega3": 3.0,
+      "Magnesium": 9.0,
+      "Kalium": 6.0,
+      "Natrium": 4.5,
+      "Selen": 5.0,
+      "Calcium": 17.0
+    },
+    "name": "calciumreiches veganes Rezept",
+    "picture": 2131558413,
     "rating": 1
   }
 ]

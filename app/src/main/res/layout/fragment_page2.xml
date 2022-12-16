@@ -52,25 +52,25 @@
         app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/checkBoxAntioxidantien"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="92dp"
         android:text="Antioxidantien"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMagnesium"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSelen" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkBoxMagnesium"
         android:layout_width="123dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:text="Magnesium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEisen" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxEisen"
         android:layout_width="67dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
@@ -80,50 +80,50 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBoxSelen"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="148dp"
         android:layout_marginTop="36dp"
         android:text="Selen"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxEisen"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/checkBoxKalium"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:text="Kalium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMagnesium" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/checkBoxOmega3"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="140dp"
         android:text="Omega-3"
-        app:layout_constraintStart_toEndOf="@+id/checkBox6"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxKalium"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAntioxidantien" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/checkBoxCalcium"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:text="Calcium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxKalium" />
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/checkBoxNatrium"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="132dp"
         android:text="Natrium"
-        app:layout_constraintStart_toEndOf="@+id/checkBox8"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCalcium"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxOmega3" />
 
     <CheckBox
         android:id="@+id/checkBox13"
@@ -143,7 +143,7 @@
         android:layout_marginTop="11dp"
         android:text="No-gos:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCalcium" />
 
     <CheckBox
         android:id="@+id/checkBox11"
@@ -208,15 +208,15 @@
         android:layout_marginTop="40dp"
         android:text="Nüsse"
         app:layout_constraintStart_toEndOf="@+id/checkBox13"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNatrium" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="174dp"
-        android:layout_marginTop="18dp"
-        android:onClick="switchScreen"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onSearch"
         android:text="Suchen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox18" />

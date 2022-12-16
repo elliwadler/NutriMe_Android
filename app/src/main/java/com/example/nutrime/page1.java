@@ -14,8 +14,6 @@ import android.view.ViewGroup;
 
 public class page1 extends Fragment {
 
-    private Page1ViewModel mViewModel;
-
     public static page1 newInstance() {
         return new page1();
     }
@@ -26,11 +24,5 @@ public class page1 extends Fragment {
         return inflater.inflate(R.layout.fragment_page1, container, false);
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(Page1ViewModel.class);
-        // TODO: Use the ViewModel
-    }
 
 }

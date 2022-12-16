@@ -1,6 +1,10 @@
 package com.example.nutrime;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class CreateRecipes {
 
@@ -8,11 +12,10 @@ public class CreateRecipes {
     public static CreateRecipes instance = new CreateRecipes();
 
     private CreateRecipes() {
-       this.recipes = this.load();
     }
 
-    private Recipe[] load() {
-        return RecipeDatabase.getInstance().getRecipes().toArray(new Recipe[0]);
+    public void init(List<Recipe> sortedRecipes) {
+        recipes = sortedRecipes.toArray(new Recipe[0]);
     }
 
     public static CreateRecipes getInstance() {
@@ -54,12 +57,20 @@ public class CreateRecipes {
         }
         return time_string;
     }
+
     public ArrayList<String[]> getProperties(){
         ArrayList properties[] = new ArrayList[recipes.length];
         String array[] = new String[this.recipes.length];
         ArrayList<String[]> all = new ArrayList<>();
         for (int i = 0; i<recipes.length;i++) {
-            properties[i] = recipes[i].getProperties().getTrue();
+
+            // Getting the highest 3 nutrients from the must haves
+            // todo: convert to relative value first, sorting by absolute makes no sense
+            // idea: create conversion class which takes nutrient enum and absolut value, then returns relative value
+            properties[i] = new ArrayList(recipes[i].getMustHaves().entrySet().stream()
+                    .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                    .map(e -> e.getKey().toString())
+                    .collect(Collectors.toList()));
             array = (String[]) properties[i].toArray(new String[properties[i].size()]);
             all.add(array);
         }

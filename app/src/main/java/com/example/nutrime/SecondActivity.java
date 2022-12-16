@@ -1,18 +1,21 @@
 package com.example.nutrime;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.IOException;
+import com.example.nutrime.enums.MustHaves;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -24,7 +27,13 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        Gson gson = new Gson();
+        Intent intent = getIntent();
+        List<MustHaves> mustHaves = gson.fromJson(intent.getStringExtra("MustHavesList"), new TypeToken<ArrayList<MustHaves>>() {}.getType());
+        List<Recipe> sortedRecipes = gson.fromJson(intent.getStringExtra("sortedRecipesList"), new TypeToken<ArrayList<Recipe>>() {}.getType());
+
         recipes = CreateRecipes.getInstance();
+        recipes.init(sortedRecipes);
 
         LoadDataInListView();
 

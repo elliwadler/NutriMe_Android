@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView4"
+        android:id="@+id/fragmentContainerSearch"
         android:name="com.example.nutrime.page2"
         android:layout_width="409dp"
         android:layout_height="1323dp"
@@ -25,7 +25,7 @@
         android:layout_height="95dp"
         android:rotationX="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fragmentContainerView4"
+        app:layout_constraintStart_toEndOf="@+id/fragmentContainerSearch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_page1" />

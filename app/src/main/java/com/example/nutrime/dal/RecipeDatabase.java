@@ -1,7 +1,9 @@
-package com.example.nutrime;
+package com.example.nutrime.dal;
 
 import android.content.res.AssetManager;
 
+import com.example.nutrime.Recipe;
+import com.example.nutrime.enums.MustHaves;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -21,9 +23,7 @@ public class RecipeDatabase {
         try {
             Gson gson = new Gson();
             Reader reader = new InputStreamReader(assetManager.open("recipes.json"), StandardCharsets.UTF_8);
-            recipes = gson.fromJson(reader, new TypeToken<ArrayList<Recipe>>() {
-            }.getType());
-            System.out.println(recipes);
+            recipes = gson.fromJson(reader, new TypeToken<ArrayList<Recipe>>() {}.getType());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -41,6 +41,12 @@ public class RecipeDatabase {
 
     public List<Recipe> getRecipes()
     {
+        return recipes;
+    }
+
+    public List<Recipe> getSortedRecipes(List<MustHaves> mustHaves)
+    {
+        recipes.sort(new Comparator(mustHaves));
         return recipes;
     }
 }

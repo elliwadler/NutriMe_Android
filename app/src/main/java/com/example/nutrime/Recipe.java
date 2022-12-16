@@ -1,17 +1,19 @@
 package com.example.nutrime;
 
-import android.media.Image;
+import com.example.nutrime.enums.MustHaves;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Dictionary;
 import java.util.List;
+import java.util.Map;
 
 public class Recipe {
     private String name;
     private int picture;
     private String[] description;
-    private List<String[]> ingredints;
+    private List<String[]> ingredients;
+    private Map<MustHaves, Float> mustHaves;
+    private int rating;
+    private long duration;
 
     @Override
     public String toString() {
@@ -19,24 +21,21 @@ public class Recipe {
                 "name='" + name + '\'' +
                 ", picture=" + picture +
                 ", description=" + Arrays.toString(description) +
-                ", properties=" + properties +
+                ", properties=" + mustHaves +
                 ", rating=" + rating +
                 ", duration=" + duration +
                 '}';
     }
 
-    private Properties properties;
-    private int rating;
-    private long duration;
-
-    Recipe(String name, int picture, String[] description, Properties properties, int rating, long duration, List<String[]> ingredints){
+    Recipe(String name, int picture, String[] description, Map<MustHaves, Float> mustHaves, int rating,
+           long duration, List<String[]> ingredients) {
         this.name = name;
         this.picture = picture;
         this.description = description;
-        this.properties = properties;
+        this.mustHaves = mustHaves;
         this.rating = rating;
         this.duration = duration;
-        this.ingredints = ingredints;
+        this.ingredients = ingredients;
     }
 
     public String getName() {
@@ -63,12 +62,12 @@ public class Recipe {
         this.description = description;
     }
 
-    public Properties getProperties() {
-        return properties;
+    public Map<MustHaves, Float> getMustHaves() {
+        return mustHaves;
     }
 
-    public void setProperties(Properties properties) {
-        this.properties = properties;
+    public void setMustHaves(Map<MustHaves, Float> mustHaves) {
+        this.mustHaves = mustHaves;
     }
 
     public int getRating() {
@@ -99,7 +98,7 @@ public class Recipe {
     }
 
     public List<String[]> getIngredients() {
-        return ingredints;
+        return ingredients;
     }
 
 }
