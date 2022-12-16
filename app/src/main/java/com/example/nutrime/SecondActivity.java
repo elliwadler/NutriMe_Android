@@ -29,7 +29,7 @@ public class SecondActivity extends AppCompatActivity {
 
         Gson gson = new Gson();
         Intent intent = getIntent();
-        List<MustHaves> mustHaves = gson.fromJson(intent.getStringExtra("MustHavesList"), new TypeToken<ArrayList<MustHaves>>() {}.getType());
+        List<MustHaves> mustHaves = gson.fromJson(intent.getStringExtra("mustHavesList"), new TypeToken<ArrayList<MustHaves>>() {}.getType());
         List<Recipe> sortedRecipes = gson.fromJson(intent.getStringExtra("sortedRecipesList"), new TypeToken<ArrayList<Recipe>>() {}.getType());
 
         recipes = CreateRecipes.getInstance();
