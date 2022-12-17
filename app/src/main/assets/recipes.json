@@ -71,8 +71,8 @@
       "Sellerie":false,
       "Schalenfruechte":false,
       "Eier":true,
-      "Vegetarisch":false,
-      "Vegan":true
+      "Tier":false,
+      "Tierprodukt":true
     },
     "name": "Paprika-Gulasch",
     "picture": 2131558408,
@@ -148,8 +148,8 @@
       "Sellerie":false,
       "Schalenfruechte":false,
       "Eier":false,
-      "Vegetarisch":false,
-      "Vegan":false
+      "Tier":false,
+      "Tierprodukt":false
     },
     "name": "Pfirsichsalat",
     "picture": 2131558416,
@@ -225,8 +225,8 @@
       "Sellerie":false,
       "Schalenfruechte":true,
       "Eier":false,
-      "Vegetarisch":true,
-      "Vegan":false
+      "Tier":true,
+      "Tierprodukt":false
     },
     "name": "Kiwi-Mango Smoothie Bowl",
     "picture": 2131558413,
@@ -302,8 +302,8 @@
       "Sellerie":true,
       "Schalenfruechte":true,
       "Eier":true,
-      "Vegetarisch":false,
-      "Vegan":false
+      "Tier":false,
+      "Tierprodukt":false
     },
     "name": "vegetarisches eisenreiches Rezept",
     "picture": 2131558413,
@@ -379,8 +379,8 @@
       "Sellerie":false,
       "Schalenfruechte":true,
       "Eier":true,
-      "Vegetarisch":false,
-      "Vegan":true
+      "Tier":false,
+      "Tierprodukt":true
     },
     "name": "calciumreiches veganes Rezept",
     "picture": 2131558413,

@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.nutrime.dal.RecipeDatabase;
 import com.example.nutrime.enums.MustHaves;
 import com.example.nutrime.enums.NoGos;
+import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Recipe recipeOfTheDay;
     private boolean searchIsHidden = true;
-    private int searchWindowDifference = 1430;
+    private final int searchWindowDifference = 1430;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,6 +120,14 @@ public class MainActivity extends AppCompatActivity {
         }
         if ( ((CheckBox)findViewById(R.id.checkBoxEier)).isChecked() ) {
             noGos.add(NoGos.Eier);
+        }
+
+        int tabPosition = ((TabLayout)findViewById((R.id.tabLayoutDiet))).getSelectedTabPosition();
+        if (tabPosition == 1) {
+            noGos.add(NoGos.Tier);
+        }
+        else if (tabPosition == 2) {
+            noGos.add(NoGos.Tierprodukt);
         }
 
         return noGos;

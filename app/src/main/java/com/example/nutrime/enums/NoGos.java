@@ -9,6 +9,6 @@ public enum NoGos {
     Sellerie,
     Schalenfruechte,
     Eier,
-    Vegetarisch,
-    Vegan
+    Tier,
+    Tierprodukt
 }
