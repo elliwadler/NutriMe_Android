@@ -1,6 +1,7 @@
 package com.example.nutrime;
 
 import com.example.nutrime.enums.MustHaves;
+import com.example.nutrime.enums.NoGos;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,6 +16,7 @@ public class Recipe {
     private String[] description;
     private List<String[]> ingredients;
     private Map<MustHaves, Float> mustHaves;
+    private Map<NoGos, Boolean> noGos;
     private int rating;
     private long duration;
 
@@ -31,7 +33,7 @@ public class Recipe {
     }
 
     Recipe(String name, int picture, String[] description, Map<MustHaves, Float> mustHaves, int rating,
-           long duration, List<String[]> ingredients) {
+           long duration, List<String[]> ingredients, Map<NoGos, Boolean> noGos) {
         this.name = name;
         this.picture = picture;
         this.description = description;
@@ -39,6 +41,7 @@ public class Recipe {
         this.rating = rating;
         this.duration = duration;
         this.ingredients = ingredients;
+        this.noGos = noGos;
     }
 
     public String getName() {
@@ -111,5 +114,13 @@ public class Recipe {
         return getMustHaves().entrySet().stream()
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .map(Map.Entry::getKey).collect(Collectors.toCollection(ArrayList::new));
+    }
+
+    public Map<NoGos, Boolean> getNoGos() {
+        return noGos;
+    }
+
+    public void setNoGos(Map<NoGos, Boolean> noGos) {
+        this.noGos = noGos;
     }
 }

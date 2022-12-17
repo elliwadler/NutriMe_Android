@@ -62,6 +62,18 @@
       "Selen": 2.0,
       "Calcium": 1.0
     },
+    "noGos":{
+      "Gluten":false,
+      "Fruktose":true,
+      "Sojabohnen":false,
+      "Laktose":false,
+      "Nuesse":true,
+      "Sellerie":false,
+      "Schalenfruechte":false,
+      "Eier":true,
+      "Vegetarisch":false,
+      "Vegan":true
+    },
     "name": "Paprika-Gulasch",
     "picture": 2131558408,
     "rating": 4
@@ -126,6 +138,18 @@
       "Natrium": 12.0,
       "Selen": 3.0,
       "Calcium": 10.0
+    },
+    "noGos":{
+      "Gluten":true,
+      "Fruktose":true,
+      "Sojabohnen":false,
+      "Laktose":true,
+      "Nuesse":false,
+      "Sellerie":false,
+      "Schalenfruechte":false,
+      "Eier":false,
+      "Vegetarisch":false,
+      "Vegan":false
     },
     "name": "Pfirsichsalat",
     "picture": 2131558416,
@@ -192,6 +216,18 @@
       "Selen": 5.0,
       "Calcium": 6.0
     },
+    "noGos":{
+      "Gluten":false,
+      "Fruktose":false,
+      "Sojabohnen":false,
+      "Laktose":true,
+      "Nuesse":false,
+      "Sellerie":false,
+      "Schalenfruechte":true,
+      "Eier":false,
+      "Vegetarisch":true,
+      "Vegan":false
+    },
     "name": "Kiwi-Mango Smoothie Bowl",
     "picture": 2131558413,
     "rating": 1
@@ -257,6 +293,18 @@
       "Selen": 2.5,
       "Calcium": 3.0
     },
+    "noGos":{
+      "Gluten":false,
+      "Fruktose":true,
+      "Sojabohnen":true,
+      "Laktose":true,
+      "Nuesse":false,
+      "Sellerie":true,
+      "Schalenfruechte":true,
+      "Eier":true,
+      "Vegetarisch":false,
+      "Vegan":false
+    },
     "name": "vegetarisches eisenreiches Rezept",
     "picture": 2131558413,
     "rating": 1
@@ -321,6 +369,18 @@
       "Natrium": 4.5,
       "Selen": 5.0,
       "Calcium": 17.0
+    },
+    "noGos":{
+      "Gluten":true,
+      "Fruktose":false,
+      "Sojabohnen":true,
+      "Laktose":false,
+      "Nuesse":false,
+      "Sellerie":false,
+      "Schalenfruechte":true,
+      "Eier":true,
+      "Vegetarisch":false,
+      "Vegan":true
     },
     "name": "calciumreiches veganes Rezept",
     "picture": 2131558413,

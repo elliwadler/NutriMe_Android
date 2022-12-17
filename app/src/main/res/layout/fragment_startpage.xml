@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/tabLayoutDiet"
         android:layout_width="409dp"
         android:layout_height="35dp"
         android:layout_marginStart="1dp"
@@ -26,16 +26,19 @@
         app:layout_constraintTop_toBottomOf="@+id/searchView">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/anyDiet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alles" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/vegetarianDiet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Vegetarisch" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/veganDiet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Vegan" />
@@ -49,7 +52,7 @@
         android:layout_marginTop="10dp"
         android:text="Must Haves:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutDiet" />
 
     <CheckBox
         android:id="@+id/checkBoxAntioxidantien"
@@ -87,7 +90,7 @@
         android:layout_marginTop="36dp"
         android:text="Selen"
         app:layout_constraintStart_toEndOf="@+id/checkBoxEisen"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutDiet" />
 
     <CheckBox
         android:id="@+id/checkBoxKalium"
@@ -126,7 +129,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBoxOmega3" />
 
     <CheckBox
-        android:id="@+id/checkBox13"
+        android:id="@+id/checkBoxGluten"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
@@ -146,68 +149,68 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBoxCalcium" />
 
     <CheckBox
-        android:id="@+id/checkBox11"
+        android:id="@+id/checkBoxSellerie"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="1dp"
         android:text="Sellerie"
-        app:layout_constraintStart_toEndOf="@+id/checkBox12"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox14" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxFruktose"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNuesse" />
 
     <CheckBox
-        android:id="@+id/checkBox12"
+        android:id="@+id/checkBoxFruktose"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:text="Fruktose"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGluten" />
 
     <CheckBox
-        android:id="@+id/checkBox15"
+        android:id="@+id/checkBoxSoja"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:text="Sojabohnen"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxFruktose" />
 
     <CheckBox
-        android:id="@+id/checkBox16"
+        android:id="@+id/checkBoxSchalenfruechte"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="110dp"
         android:text="Schalenfrüchte"
-        app:layout_constraintStart_toEndOf="@+id/checkBox15"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSoja"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSellerie" />
 
     <CheckBox
-        android:id="@+id/checkBox18"
+        android:id="@+id/checkBoxEier"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="134dp"
         android:text="Eier"
-        app:layout_constraintStart_toEndOf="@+id/checkBox17"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox16" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxLaktose"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSchalenfruechte" />
 
     <CheckBox
-        android:id="@+id/checkBox17"
+        android:id="@+id/checkBoxLaktose"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:text="Laktose"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox15" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSoja" />
 
     <CheckBox
-        android:id="@+id/checkBox14"
+        android:id="@+id/checkBoxNuesse"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="144dp"
         android:layout_marginTop="40dp"
         android:text="Nüsse"
-        app:layout_constraintStart_toEndOf="@+id/checkBox13"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxGluten"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxNatrium" />
 
     <Button
@@ -219,7 +222,7 @@
         android:onClick="onSearch"
         android:text="Suchen"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox18" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEier" />
 
     <TextView
         android:id="@+id/textView7"
@@ -229,7 +232,7 @@
         android:layout_marginTop="148dp"
         android:text="Wusstest du schon, dass..."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox17" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLaktose" />
 
     <TextView
         android:id="@+id/textView8"

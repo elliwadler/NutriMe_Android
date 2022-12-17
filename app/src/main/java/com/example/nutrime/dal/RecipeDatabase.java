@@ -4,6 +4,7 @@ import android.content.res.AssetManager;
 
 import com.example.nutrime.Recipe;
 import com.example.nutrime.enums.MustHaves;
+import com.example.nutrime.enums.NoGos;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -13,6 +14,7 @@ import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class RecipeDatabase {
 
@@ -44,10 +46,16 @@ public class RecipeDatabase {
         return recipes;
     }
 
-    public List<Recipe> getSortedRecipes(List<MustHaves> mustHaves)
+    public List<Recipe> getExcludedAndSortedRecipes(List<NoGos> noGos, List<MustHaves> mustHaves)
     {
-        recipes.sort(new Comparator(mustHaves));
-        return recipes;
+        return recipes.stream().filter(e -> {
+            for (NoGos noGo : noGos) {
+                if (Boolean.TRUE.equals(e.getNoGos().get(noGo))) {
+                    return false;
+                }
+            }
+            return true;
+        }).sorted(new Comparator(mustHaves)).collect(Collectors.toList());
     }
 
     public Recipe getRecipeOfTheDay() {

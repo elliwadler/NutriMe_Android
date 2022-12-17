@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.nutrime.dal.RecipeDatabase;
 import com.example.nutrime.enums.MustHaves;
+import com.example.nutrime.enums.NoGos;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -46,6 +48,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSearch(View view)
     {
+        List<MustHaves> mustHaves = getMustHaves();
+        List<NoGos> noGos = getNoGos();
+
+        List<Recipe> sortedRecipes = RecipeDatabase.getInstance().getExcludedAndSortedRecipes(noGos,  mustHaves);
+
+        Gson gson = new Gson();
+
+        Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+        //It is hard to put enums and list of custom types, so I just serialize everything to String
+        intent.putExtra("mustHavesList", gson.toJson(mustHaves));
+        intent.putExtra("noGosList", gson.toJson(noGos));
+        intent.putExtra("sortedRecipesList", gson.toJson(sortedRecipes));
+        startActivity(intent);
+    }
+
+    @NonNull
+    private List<MustHaves> getMustHaves() {
         List<MustHaves> mustHaves = new ArrayList<>();
         if ( ((CheckBox)findViewById(R.id.checkBoxEisen)).isChecked() ) {
             mustHaves.add(MustHaves.Eisen);
@@ -71,18 +90,38 @@ public class MainActivity extends AppCompatActivity {
         if ( ((CheckBox)findViewById(R.id.checkBoxNatrium)).isChecked() ) {
             mustHaves.add(MustHaves.Natrium);
         }
+        return mustHaves;
+    }
 
-        List<Recipe> sortedRecipes = RecipeDatabase.getInstance().getSortedRecipes(mustHaves);
+    private List<NoGos> getNoGos()
+    {
+        List<NoGos> noGos= new ArrayList<>();
+        if ( ((CheckBox)findViewById(R.id.checkBoxGluten)).isChecked() ) {
+            noGos.add(NoGos.Gluten);
+        }
+        if ( ((CheckBox)findViewById(R.id.checkBoxFruktose)).isChecked() ) {
+            noGos.add(NoGos.Fruktose);
+        }
+        if ( ((CheckBox)findViewById(R.id.checkBoxSoja)).isChecked() ) {
+            noGos.add(NoGos.Sojabohnen);
+        }
+        if ( ((CheckBox)findViewById(R.id.checkBoxLaktose)).isChecked() ) {
+            noGos.add(NoGos.Laktose);
+        }
+        if ( ((CheckBox)findViewById(R.id.checkBoxNuesse)).isChecked() ) {
+            noGos.add(NoGos.Nuesse);
+        }
+        if ( ((CheckBox)findViewById(R.id.checkBoxSellerie)).isChecked() ) {
+            noGos.add(NoGos.Sellerie);
+        }
+        if ( ((CheckBox)findViewById(R.id.checkBoxSchalenfruechte)).isChecked() ) {
+            noGos.add(NoGos.Schalenfruechte);
+        }
+        if ( ((CheckBox)findViewById(R.id.checkBoxEier)).isChecked() ) {
+            noGos.add(NoGos.Eier);
+        }
 
-        Gson gson = new Gson();
-
-        System.out.println(mustHaves.get(0));
-
-        Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
-        //It is hard to put enums and list of custom types, so I just serialize everything to String
-        intent.putExtra("mustHavesList", gson.toJson(mustHaves));
-        intent.putExtra("sortedRecipesList", gson.toJson(sortedRecipes));
-        startActivity(intent);
+        return noGos;
     }
 
     public void goToRecipe(View view) {

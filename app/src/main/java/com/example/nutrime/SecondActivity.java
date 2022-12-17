@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.nutrime.dal.ProductDatabase;
 import com.example.nutrime.enums.MustHaves;
+import com.example.nutrime.enums.NoGos;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -35,6 +36,7 @@ public class SecondActivity extends AppCompatActivity {
         Gson gson = new Gson();
         Intent intent = getIntent();
         List<MustHaves> mustHaves = gson.fromJson(intent.getStringExtra("mustHavesList"), new TypeToken<ArrayList<MustHaves>>() {}.getType());
+        List<NoGos> noGos = gson.fromJson(intent.getStringExtra("noGosList"), new TypeToken<ArrayList<NoGos>>() {}.getType());
         List<Recipe> sortedRecipes = gson.fromJson(intent.getStringExtra("sortedRecipesList"), new TypeToken<ArrayList<Recipe>>() {}.getType());
 
         recipes = CreateRecipes.getInstance();
