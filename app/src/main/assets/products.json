@@ -1,23 +1,164 @@
 [
   {
-    "should-eat": [
-      "Leberwurst",
-      "Tofu",
-      "Linsen",
-      "Kiwi",
-      "rotes Fleisch",
-      "Mangold"
+    "help": [
+      "Kiwis",
+      "Paprika",
+      "Zitrusfrüchte",
+      "Brokkoli"
     ],
-    "should-not-eat": [
-      "Käse",
-      "Kaffe",
+    "nutrient": "Eisen",
+    "should_eat": [
+      "Rindfleisch",
+      "Sesam",
+      "Pistazien",
+      "Spinat",
+      "Haferflocken",
+      "Cashewkerne"
+    ],
+    "should_not_eat": [
       "Rotwein",
-      "Milch"
+      "schwarzer Tee",
+      "Kakao",
+      "rote Beete",
+      "Reisen"
+    ]
+  },
+  {
+    "help": [
+      "Kiwis",
+      "Paprika",
+      "Zitrusfrüchte",
+      "Brokkoli"
     ],
-    "helps": [
-      "Orange",
-      "Zitrone"
+    "nutrient": "Magnesium",
+    "should_eat": [
+      "Kürbiskerne",
+      "Weizenkleie",
+      "Weizenkleie",
+      "Mandeln",
+      "Sojabohnen",
+      "Mais",
+      "Kichererbsen",
+      "Banane"
     ],
-    "name": ["Eisen"]
+    "should_not_eat": [
+      "Rotwein",
+      "schwarzer Tee",
+      "Kakao",
+      "rote Beete",
+      "Reisen"
+    ]
+  },
+  {
+    "help": [
+      "Olivenöl"
+    ],
+    "nutrient": "Kalium",
+    "should_eat": [
+      "Bananan",
+      "Karotten",
+      "Avocado",
+      "Mandeln",
+      "Zartbitterschokolade",
+      "Dinkelmehl",
+      "Forelle"
+    ],
+    "should_not_eat": [
+      "Rotwein",
+      "schwarzer Tee",
+      "Kakao",
+      "rote Beete",
+      "Reisen"
+    ]
+  },
+  {
+    "help": [
+      ""
+    ],
+    "nutrient": "Calcium",
+    "should_eat": [
+      "Fisch",
+      "Haferflocken",
+      "Ei",
+      "Milchprodukte",
+      "Mineralwasser",
+      "Hülsenfrüchte"
+    ],
+    "should_not_eat": [
+      "Alkohol",
+      "Kaffe",
+      "Salz"
+    ]
+  },
+  {
+    "help": [
+      ""
+    ],
+    "nutrient": "Selen",
+    "should_eat": [
+      "Hafer",
+      "Kakao",
+      "Paprika",
+      "Tofu",
+      "Leinsamen",
+      "Paranüsse",
+      "Champignons",
+      "Brokkoli"
+    ],
+    "should_not_eat": [
+      ""
+    ]
+  },
+  {
+    "help": [
+      ""
+    ],
+    "nutrient": "Antioxidantien",
+    "should_eat": [
+      "Äpfel",
+      "Kaffee",
+      "Knoblauch",
+      "Tomaten",
+      "Hirse",
+      "Paranüsse",
+      "Brokkoli"
+    ],
+    "should_not_eat": [
+      ""
+    ]
+  },
+  {
+    "help": [
+      ""
+    ],
+    "nutrient": "Omega3",
+    "should_eat": [
+      "Leinöl",
+      "Chiasamen",
+      "Walnüsse",
+      "Hering",
+      "Lachs",
+      "Thunfisch"
+    ],
+    "should_not_eat": [
+      ""
+    ]
+  },
+  {
+    "help": [
+      ""
+    ],
+    "nutrient": "Natrium",
+    "should_eat": [
+      "Mozzerella",
+      "Schafskäse",
+      "Kastanien",
+      "Oliven",
+      "Salzstangen",
+      "Salami"
+    ],
+    "should_not_eat": [
+      ""
+    ]
   }
 ]

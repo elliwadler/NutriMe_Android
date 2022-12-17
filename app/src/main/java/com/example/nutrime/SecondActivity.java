@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.nutrime.dal.ProductDatabase;
 import com.example.nutrime.enums.MustHaves;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.google.gson.Gson;
@@ -27,6 +28,10 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        //delete later
+        // CreateProducts createProducts = CreateProducts.getInstance();
+        //createProducts.load();
 
         Gson gson = new Gson();
         Intent intent = getIntent();
@@ -200,37 +205,52 @@ public class SecondActivity extends AppCompatActivity {
             linearLayout_food.setVisibility(View.GONE);
         }
 
-        TextView textView = new TextView(this);
-        textView.setTextSize(14);
-        textView.setPadding(20, 20, 20, 20);
+
 
         switch (view.getId()) {
             case (0):
-                textView.setText("Eisen");
+                loadProducts("Eisen", linearLayout_food);
                 break;
             case (1):
-                textView.setText("Magensium");
+                loadProducts("Magnesium",  linearLayout_food);
                 break;
             case (2):
-                textView.setText("Kalium");
+                loadProducts("Kalium",  linearLayout_food);
                 break;
             case (3):
-                textView.setText("Calcium");
+                loadProducts("Calcium",  linearLayout_food);
                 break;
             case (4):
-                textView.setText("Selen");
+                loadProducts("Selen",  linearLayout_food);
                 break;
             case (5):
-                textView.setText("Antioxidantien");
+                loadProducts("Antioxidantien",  linearLayout_food);
                 break;
             case (6):
-                textView.setText("Omega3");
+                loadProducts("Omega3",  linearLayout_food);
                 break;
             case (7):
-                textView.setText("Natrium");
+                loadProducts("Natrium",  linearLayout_food);
                 break;
         }
-        linearLayout_food.addView(textView);
+
+
+    }
+
+    public void loadProducts(String nutrient, LinearLayout linearLayout_food){
+
+        ProductDatabase.Init(getAssets());
+        Products products = new Products();
+        products = ProductDatabase.getInstance().getSpecificProductList(nutrient);
+
+
+        //for (String s : products.should_eat) {
+            TextView textView = new TextView(this);
+            textView.setText(products.String_should_eat());
+            textView.setTextSize(14);
+            textView.setPadding(20, 20, 20, 20);
+            linearLayout_food.addView(textView);
+        //}
 
     }
 }
