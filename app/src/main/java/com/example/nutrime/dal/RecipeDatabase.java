@@ -29,7 +29,7 @@ public class RecipeDatabase {
         }
     }
 
-    public static void Init(AssetManager assetManager)
+    public static void init(AssetManager assetManager)
     {
         recipeDatabase = new RecipeDatabase(assetManager);
     }
@@ -48,5 +48,9 @@ public class RecipeDatabase {
     {
         recipes.sort(new Comparator(mustHaves));
         return recipes;
+    }
+
+    public Recipe getRecipeOfTheDay() {
+        return recipes.get((int) (Math.random() * recipes.size()) );
     }
 }

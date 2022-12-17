@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.nutrime.dal.ProductDatabase;
 import com.example.nutrime.enums.MustHaves;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -137,6 +136,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 startActivity(intent);
     }
+
     public void LoadDataInListView(){
         String recipe_name_List[] = recipes.getNames();
         String recipe_rating_List[] = recipes.getRating();

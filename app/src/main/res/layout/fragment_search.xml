@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:alpha="1"
     android:background="@color/white"
-    tools:context=".page1">
+    tools:context=".SearchPage">
 
     <TextView
         android:id="@+id/textView"

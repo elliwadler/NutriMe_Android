@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".page2">
+    tools:context=".Startpage">
 
     <SearchView
         android:id="@+id/searchView"
@@ -227,7 +227,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
         android:layout_marginTop="148dp"
-        android:text="Wusstest du schon das..."
+        android:text="Wusstest du schon, dass..."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox17" />
 
@@ -240,5 +240,23 @@
         android:text="In Frankreich pro Jahr schätzungsweise 500 000 000 Weinbergschnecken verspeißt werden?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <FrameLayout
+        android:layout_width="399dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:onClick="goToRecipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <include
+            android:id="@+id/recipeOfTheDay"
+            layout="@layout/activity_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

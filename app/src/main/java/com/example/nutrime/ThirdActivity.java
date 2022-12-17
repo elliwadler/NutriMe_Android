@@ -1,31 +1,18 @@
 package com.example.nutrime;
 
-import static java.lang.Integer.valueOf;
-
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.content.Context;
 import android.graphics.Color;
-import android.graphics.Picture;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.nutrime.enums.MustHaves;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 public class ThirdActivity extends AppCompatActivity {
 
@@ -133,7 +120,7 @@ public class ThirdActivity extends AppCompatActivity {
 
         }
 
-        String time = recipe.getDuration();
+        String time = recipe.getPreparationTimePrettyPrint();
         TextView time_tv =  findViewById(R.id.tv_duration);
         time_tv.setText(time);
         time_tv.setTextColor(Color.parseColor("#000000"));

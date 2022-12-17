@@ -12,29 +12,36 @@ import com.example.nutrime.enums.MustHaves;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private boolean isHidden = true;
+    private Recipe recipeOfTheDay;
+    private boolean searchIsHidden = true;
     private int searchWindowDifference = 1430;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        RecipeDatabase.init(getAssets());
 
-        RecipeDatabase.Init(getAssets());
+        recipeOfTheDay = RecipeDatabase.getInstance().getRecipeOfTheDay();
+    }
+
+    public Recipe getRecipeOfTheDay() {
+        return recipeOfTheDay;
     }
 
     public void switchSearch(View view) {
-        if (isHidden) {
-            findViewById(R.id.fragmentContainerSearch).setY(findViewById(R.id.fragmentContainerSearch).getY() + searchWindowDifference);
+        if (searchIsHidden) {
+            findViewById(R.id.fragmentContainerStartpage).setY(findViewById(R.id.fragmentContainerStartpage).getY() + searchWindowDifference);
         }
         else {
-            findViewById(R.id.fragmentContainerSearch).setY(findViewById(R.id.fragmentContainerSearch).getY() - searchWindowDifference);
+            findViewById(R.id.fragmentContainerStartpage).setY(findViewById(R.id.fragmentContainerStartpage).getY() - searchWindowDifference);
         }
-        isHidden = !isHidden;
+        searchIsHidden = !searchIsHidden;
     }
 
     public void onSearch(View view)
@@ -75,6 +82,13 @@ public class MainActivity extends AppCompatActivity {
         //It is hard to put enums and list of custom types, so I just serialize everything to String
         intent.putExtra("mustHavesList", gson.toJson(mustHaves));
         intent.putExtra("sortedRecipesList", gson.toJson(sortedRecipes));
+        startActivity(intent);
+    }
+
+    public void goToRecipe(View view) {
+        Intent intent = new Intent(getApplicationContext(), ThirdActivity.class);
+        intent.putExtra("REZEPT_name", recipeOfTheDay.getName());
+        CreateRecipes.getInstance().init(Collections.singletonList(recipeOfTheDay));
         startActivity(intent);
     }
 }
