@@ -5,11 +5,11 @@ import com.example.nutrime.enums.MustHaves;
 
 import java.util.List;
 
-public class Comparator implements java.util.Comparator<Recipe> {
+public class RecipeComparator implements java.util.Comparator<Recipe> {
 
     private final List<MustHaves> mustHaves;
 
-    public Comparator(List<MustHaves> mustHaves) {
+    public RecipeComparator(List<MustHaves> mustHaves) {
         this.mustHaves = mustHaves;
     }
 

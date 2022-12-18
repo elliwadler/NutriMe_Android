@@ -55,12 +55,12 @@
     "mustHaves": {
       "Eisen": 10.0,
       "Antioxidantien": 95.0,
-      "Omega3": 0.5,
-      "Magnesium": 7.0,
-      "Kalium": 5.0,
+      "Omega3": 42.0,
+      "Magnesium": 46.0,
+      "Kalium": 453.0,
       "Natrium": 30.0,
       "Selen": 0.017,
-      "Calcium": 1.0
+      "Calcium": 45.0
     },
     "noGos":{
       "Gluten":false,
@@ -122,11 +122,11 @@
     "mustHaves": {
       "Eisen": 1.0,
       "Antioxidantien": 15.0,
-      "Omega3": 4.0,
+      "Omega3": 68.0,
       "Magnesium": 54.0,
       "Kalium": 720.0,
-      "Natrium": 8.0,
-      "Selen": 2.0,
+      "Natrium": 99.0,
+      "Selen": 0.0012,
       "Calcium": 200.0
     },
     "noGos":{
@@ -188,12 +188,12 @@
     "mustHaves": {
       "Eisen": 1.0,
       "Antioxidantien": 568.0,
-      "Omega3": 14.0,
-      "Magnesium": 3.0,
-      "Kalium": 4.0,
-      "Natrium": 23.0,
+      "Omega3": 135.0,
+      "Magnesium": 83.0,
+      "Kalium": 332.0,
+      "Natrium": 186.0,
       "Selen": 0.005,
-      "Calcium": 6.0
+      "Calcium": 138.0
     },
     "noGos":{
       "Gluten":false,
@@ -274,9 +274,9 @@
       "Omega3": 100,
       "Magnesium": 77,
       "Kalium": 922,
-      "Natrium": 10.0,
-      "Selen": 2.5,
-      "Calcium": 161
+      "Natrium": 329.0,
+      "Selen": 0.03,
+      "Calcium": 161.0
     },
     "noGos":{
       "Gluten":true,
@@ -288,7 +288,7 @@
       "Schalenfruechte":false,
       "Eier":false,
       "Tier":true,
-      "Tierprodukt":false
+      "Tierprodukt":true
     },
     "name": "Kabeljau auf Brokkoli-Erbsen-Püree",
     "picture": 2131558417,
@@ -331,11 +331,11 @@
     "mustHaves": {
       "Eisen": 4.3,
       "Antioxidantien": 10.0,
-      "Omega3": 5.0,
+      "Omega3": 198.0,
       "Magnesium": 105.0,
       "Kalium": 718.0,
-      "Natrium": 10,
-      "Selen": 1.0,
+      "Natrium": 533.0,
+      "Selen": 0.022,
       "Calcium": 112.0
     },
     "noGos":{
@@ -408,12 +408,12 @@
     "mustHaves": {
       "Eisen": 1.0,
       "Antioxidantien": 342.0,
-      "Omega3": 3.0,
-      "Magnesium": 9.0,
-      "Kalium": 6.0,
-      "Natrium": 63.0,
+      "Omega3": 78.0,
+      "Magnesium": 57.0,
+      "Kalium": 354.0,
+      "Natrium": 643.0,
       "Selen": 0.021,
-      "Calcium": 17.0
+      "Calcium": 407.0
     },
     "noGos":{
       "Gluten":true,
@@ -476,16 +476,16 @@
     "mustHaves": {
       "Eisen": 1.8,
       "Antioxidantien": 15.0,
-      "Omega3": 10.0,
+      "Omega3": 48.0,
       "Magnesium": 58.0,
       "Kalium": 379.0,
-      "Natrium": 4.5,
-      "Selen": 7.0,
+      "Natrium": 376.0,
+      "Selen": 0.03,
       "Calcium": 235.0
     },
     "noGos":{
       "Gluten":true,
-      "Fruktose":true,
+      "Fruktose":false,
       "Sojabohnen":false,
       "Laktose":true,
       "Nuesse":true,
@@ -493,7 +493,7 @@
       "Schalenfruechte":true,
       "Eier":false,
       "Tier":false,
-      "Tierprodukt":false
+      "Tierprodukt":true
     },
     "name": "Kartoffel-Lauch-Kuchen",
     "picture": 2131558408,

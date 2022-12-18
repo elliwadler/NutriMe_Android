@@ -55,7 +55,7 @@ public class RecipeDatabase {
                 }
             }
             return true;
-        }).sorted(new Comparator(mustHaves)).collect(Collectors.toList());
+        }).sorted(new RecipeComparator(mustHaves)).collect(Collectors.toList());
     }
 
     public Recipe getRecipeOfTheDay() {

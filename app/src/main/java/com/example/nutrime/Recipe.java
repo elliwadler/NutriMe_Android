@@ -5,7 +5,6 @@ import com.example.nutrime.enums.NoGos;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -107,12 +106,9 @@ public class Recipe {
         return ingredients;
     }
 
-    // Getting the highest 3 nutrients from the must haves
-    // todo: convert to relative value first, sorting by absolute makes no sense
-    // idea: create conversion class which takes nutrient enum and absolut value, then returns relative value
     public ArrayList<MustHaves> getBestIngredients() {
         return getMustHaves().entrySet().stream()
-                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .sorted(new MustHavesComparator())
                 .map(Map.Entry::getKey).collect(Collectors.toCollection(ArrayList::new));
     }
 
