@@ -9,24 +9,12 @@
     android:background="@color/white"
     tools:context=".SearchPage">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NutriMe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="337dp"
         android:layout_height="49dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
         android:background="@color/green"
         android:layoutDirection="rtl"
         android:onClick="switchSearch"
@@ -36,7 +24,7 @@
         app:icon="@android:drawable/arrow_down_float"
         app:iconTint="#262829"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="#00BCD4"
         app:strokeColor="#F3EFEF" />/>
 </androidx.constraintlayout.widget.ConstraintLayout>
