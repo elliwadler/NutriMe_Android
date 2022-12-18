@@ -54,12 +54,12 @@
     ],
     "mustHaves": {
       "Eisen": 10.0,
-      "Antioxidantien": 1.0,
+      "Antioxidantien": 95.0,
       "Omega3": 0.5,
       "Magnesium": 7.0,
       "Kalium": 5.0,
-      "Natrium": 4.0,
-      "Selen": 2.0,
+      "Natrium": 30.0,
+      "Selen": 0.017,
       "Calcium": 1.0
     },
     "noGos":{
@@ -131,12 +131,12 @@
     ],
     "mustHaves": {
       "Eisen": 2.0,
-      "Antioxidantien": 3.0,
+      "Antioxidantien": 241.0,
       "Omega3": 1.0,
       "Magnesium": 9.0,
       "Kalium": 8.0,
-      "Natrium": 12.0,
-      "Selen": 3.0,
+      "Natrium": 45.0,
+      "Selen": 0.007,
       "Calcium": 10.0
     },
     "noGos":{
@@ -208,12 +208,12 @@
     ],
     "mustHaves": {
       "Eisen": 1.0,
-      "Antioxidantien": 6.0,
+      "Antioxidantien": 568.0,
       "Omega3": 14.0,
       "Magnesium": 3.0,
       "Kalium": 4.0,
-      "Natrium": 5.0,
-      "Selen": 5.0,
+      "Natrium": 23.0,
+      "Selen": 0.005,
       "Calcium": 6.0
     },
     "noGos":{
@@ -285,12 +285,12 @@
     ],
     "mustHaves": {
       "Eisen": 13.0,
-      "Antioxidantien": 6.0,
+      "Antioxidantien": 539.0,
       "Omega3": 1.0,
       "Magnesium": 4.5,
       "Kalium": 5.0,
-      "Natrium": 3.0,
-      "Selen": 2.5,
+      "Natrium": 82.0,
+      "Selen": 0.012,
       "Calcium": 3.0
     },
     "noGos":{
@@ -362,12 +362,12 @@
     ],
     "mustHaves": {
       "Eisen": 1.0,
-      "Antioxidantien": 7.0,
+      "Antioxidantien": 342.0,
       "Omega3": 3.0,
       "Magnesium": 9.0,
       "Kalium": 6.0,
-      "Natrium": 4.5,
-      "Selen": 5.0,
+      "Natrium": 63.0,
+      "Selen": 0.021,
       "Calcium": 17.0
     },
     "noGos":{
