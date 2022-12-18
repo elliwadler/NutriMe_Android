@@ -54,12 +54,12 @@
     ],
     "mustHaves": {
       "Eisen": 10.0,
-      "Antioxidantien": 1.0,
+      "Antioxidantien": 95.0,
       "Omega3": 0.5,
       "Magnesium": 7.0,
       "Kalium": 5.0,
-      "Natrium": 4.0,
-      "Selen": 2.0,
+      "Natrium": 30.0,
+      "Selen": 0.017,
       "Calcium": 1.0
     },
     "noGos":{
@@ -67,11 +67,11 @@
       "Fruktose":true,
       "Sojabohnen":false,
       "Laktose":false,
-      "Nuesse":true,
-      "Sellerie":false,
+      "Nuesse":false,
+      "Sellerie":true,
       "Schalenfruechte":false,
       "Eier":true,
-      "Tier":false,
+      "Tier":true,
       "Tierprodukt":true
     },
     "name": "Paprika-Gulasch",
@@ -120,6 +120,7 @@
       ]
     ],
     "mustHaves": {
+<<<<<<< HEAD
       "Eisen": 1.0,
       "Antioxidantien": 15.0,
       "Omega3": 4.0,
@@ -128,18 +129,32 @@
       "Natrium": 8.0,
       "Selen": 2.0,
       "Calcium": 200.0
+=======
+      "Eisen": 2.0,
+      "Antioxidantien": 241.0,
+      "Omega3": 1.0,
+      "Magnesium": 9.0,
+      "Kalium": 8.0,
+      "Natrium": 45.0,
+      "Selen": 0.007,
+      "Calcium": 10.0
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     },
     "noGos":{
       "Gluten":false,
       "Fruktose":true,
       "Sojabohnen":false,
+<<<<<<< HEAD
       "Laktose":false,
+=======
+      "Laktose":true,
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
       "Nuesse":true,
       "Sellerie":false,
       "Schalenfruechte":false,
       "Eier":false,
       "Tier":false,
-      "Tierprodukt":false
+      "Tierprodukt":true
     },
     "name": "Pfirsichsalat",
     "picture": 2131558420,
@@ -186,6 +201,7 @@
       ]
     ],
     "mustHaves": {
+<<<<<<< HEAD
       "Eisen": 0.1,
       "Antioxidantien": 20.0,
       "Omega3": 5.0,
@@ -194,18 +210,32 @@
       "Natrium": 1.0,
       "Selen": 1.0,
       "Calcium": 1.0
+=======
+      "Eisen": 1.0,
+      "Antioxidantien": 568.0,
+      "Omega3": 14.0,
+      "Magnesium": 3.0,
+      "Kalium": 4.0,
+      "Natrium": 23.0,
+      "Selen": 0.005,
+      "Calcium": 6.0
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     },
     "noGos":{
       "Gluten":false,
       "Fruktose":true,
       "Sojabohnen":false,
-      "Laktose":true,
+      "Laktose":false,
       "Nuesse":false,
       "Sellerie":false,
-      "Schalenfruechte":true,
+      "Schalenfruechte":false,
       "Eier":false,
       "Tier":false,
+<<<<<<< HEAD
       "Tierprodukt":true
+=======
+      "Tierprodukt":false
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     },
     "name": "Kiwi-Mango Smoothie Bowl",
     "picture": 2131558417,
@@ -269,6 +299,7 @@
       ]
     ],
     "mustHaves": {
+<<<<<<< HEAD
       "Eisen": 2.4,
       "Antioxidantien": 25.0,
       "Omega3": 100,
@@ -342,6 +373,98 @@
       "Gluten":false,
       "Fruktose":false,
       "Sojabohnen":false,
+=======
+      "Eisen": 13.0,
+      "Antioxidantien": 539.0,
+      "Omega3": 1.0,
+      "Magnesium": 4.5,
+      "Kalium": 5.0,
+      "Natrium": 82.0,
+      "Selen": 0.012,
+      "Calcium": 3.0
+    },
+    "noGos":{
+      "Gluten":false,
+      "Fruktose":true,
+      "Sojabohnen":true,
+      "Laktose":true,
+      "Nuesse":false,
+      "Sellerie":true,
+      "Schalenfruechte":true,
+      "Eier":true,
+      "Tier":false,
+      "Tierprodukt":true
+    },
+    "name": "vegetarisches eisenreiches Rezept",
+    "picture": 2131558413,
+    "rating": 1
+  },
+  {
+    "description": [
+      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
+    ],
+    "duration": 300,
+    "ingredients": [
+      [
+        "Zutat1",
+        "750 Gramm"
+      ],
+      [
+        "Zutat2",
+        "4 Stück"
+      ],
+      [
+        "Zutat3",
+        "3 Stück"
+      ],
+      [
+        "Zutat4",
+        "2 Stück"
+      ],
+      [
+        "Zutat5",
+        "4 Stück"
+      ],
+      [
+        "Zutat6",
+        "5 Esslöffel"
+      ],
+      [
+        "Zutat7",
+        "250 ml"
+      ],
+      [
+        "Zutat8",
+        "1 Esslöffel"
+      ],
+      [
+        "Zutat9",
+        "1/2 Esslöffel"
+      ],
+      [
+        "Zutat10",
+        "4 Esslöffel"
+      ],
+      [
+        "Zutat11",
+        "etwas"
+      ]
+    ],
+    "mustHaves": {
+      "Eisen": 1.0,
+      "Antioxidantien": 342.0,
+      "Omega3": 3.0,
+      "Magnesium": 9.0,
+      "Kalium": 6.0,
+      "Natrium": 63.0,
+      "Selen": 0.021,
+      "Calcium": 17.0
+    },
+    "noGos":{
+      "Gluten":true,
+      "Fruktose":true,
+      "Sojabohnen":true,
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
       "Laktose":false,
       "Nuesse":false,
       "Sellerie":false,
@@ -414,9 +537,9 @@
       "Nuesse":true,
       "Sellerie":false,
       "Schalenfruechte":true,
-      "Eier":true,
+      "Eier":false,
       "Tier":false,
-      "Tierprodukt":true
+      "Tierprodukt":false
     },
     "name": "Kartoffel-Lauch-Kuchen",
     "picture": 2131558408,

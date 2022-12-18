@@ -25,14 +25,15 @@ public class Comparator implements java.util.Comparator<Recipe> {
         return 0;
     }
 
-    private long getScore(Recipe recipe) {
-        long sum = 0;
+    private Float getScore(Recipe recipe) {
+        float sum = 0;
+        DailyNeedsDatabase dailyNeeds = DailyNeedsDatabase.getInstance();
 
-        //todo: sort by relative value, not absolute
         for (MustHaves mustHave : mustHaves) {
-            sum += recipe.getMustHaves().get(mustHave);
+            Float absoluteValue = recipe.getMustHaves().get(mustHave);
+            sum += dailyNeeds.getRelativeAmount(mustHave, absoluteValue);
         }
 
-        return sum / (long) mustHaves.size();
+        return sum / mustHaves.size();
     }
 }

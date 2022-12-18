@@ -11,16 +11,16 @@
       "Rindfleisch",
       "Sesam",
       "Pistazien",
-      "Spinat",
-      "Haferflocken",
+      "gekochter Spinat",
+      "eingeweichte Haferflocken",
       "Cashewkerne"
     ],
     "should_not_eat": [
       "Rotwein",
       "schwarzer Tee",
-      "Kakao",
+      "Kaffee",
       "rote Beete",
-      "Reisen"
+      "calciumreiche Milch"
     ]
   },
   {
@@ -34,7 +34,6 @@
     "should_eat": [
       "Kürbiskerne",
       "Weizenkleie",
-      "Weizenkleie",
       "Mandeln",
       "Sojabohnen",
       "Mais",
@@ -42,11 +41,15 @@
       "Banane"
     ],
     "should_not_eat": [
+<<<<<<< HEAD
       "Rotwein",
       "schwarzer Tee",
       "Kakao",
       "rote Beete",
       "Spinat"
+=======
+      "Zink und Eisen in hohen Mengen"
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ]
   },
   {
@@ -61,21 +64,22 @@
       "Mandeln",
       "Zartbitterschokolade",
       "Dinkelmehl",
-      "Forelle"
+      "Forelle",
+      "Meeresfrüchte"
     ],
     "should_not_eat": [
-      "Rotwein",
-      "schwarzer Tee",
-      "Kakao",
-      "rote Beete",
-      "Reisen"
+      "nicht angegeben"
     ]
   },
   {
     "help": [
+<<<<<<< HEAD
       "Zitrusfrüchte",
       "Magarine",
       "Fischöl"
+=======
+      "nicht angegeben"
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ],
     "nutrient": "Calcium",
     "should_eat": [
@@ -95,8 +99,12 @@
   },
   {
     "help": [
+<<<<<<< HEAD
       "Reis",
       "Nüsse"
+=======
+      "Zinkhaltige Lebensmittel"
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ],
     "nutrient": "Selen",
     "should_eat": [
@@ -111,9 +119,15 @@
       "Nüsse"
     ],
     "should_not_eat": [
+<<<<<<< HEAD
       "Zitrusfrüchte",
       "Paprika",
       "Brokkoli"
+=======
+      "Vitamin C",
+      "Orangen",
+      "Paprika"
+>>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ]
   },
   {
@@ -122,13 +136,11 @@
     ],
     "nutrient": "Antioxidantien",
     "should_eat": [
-      "Äpfel",
-      "Kaffee",
-      "Knoblauch",
-      "Tomaten",
-      "Hirse",
-      "Paranüsse",
-      "Brokkoli"
+      "Zitrusfrüchte",
+      "Paprika",
+      "Acerolkirsche",
+      "Aroniabeere",
+      "Aubergine"
     ],
     "should_not_eat": [
       "Alkohol"
@@ -151,7 +163,9 @@
       "Thunfisch"
     ],
     "should_not_eat": [
-      ""
+      "tierische Fette",
+      "Eier",
+      "Milch"
     ]
   },
   {
@@ -164,6 +178,9 @@
     "should_eat": [
       "verarbeitete Fischprodukte",
       "Schafskäse",
+      "Hartkäse",
+      "gekochter Schinken",
+      "Vollmilch",
       "Kastanien",
       "Oliven",
       "Salzstangen",

@@ -137,6 +137,10 @@ public class ThirdActivity extends AppCompatActivity {
         LinearLayout linearLayout_nutrients_amount = (LinearLayout) findViewById(R.id.ll_nutrients_column2);
         LinearLayout linearLayout_nutrients_percent = (LinearLayout) findViewById(R.id.ll_nutrients_column3);
 
+        linearLayout_nutrients.addView(new TextView(this));
+        linearLayout_nutrients_amount.addView(new TextView(this));
+        linearLayout_nutrients_percent.addView(new TextView(this));
+
         for (Map.Entry<MustHaves, Float> entry : must_haves.entrySet()) {
                 String key = entry.getKey().toString();
 
@@ -156,12 +160,8 @@ public class ThirdActivity extends AppCompatActivity {
                 textView1.setPadding(20, 20, 20, 20);
                 linearLayout_nutrients_amount.addView(textView1);
 
-
-                DailyNeedsDatabase.Init(getAssets());
-                HashMap map = new HashMap();
-                map = DailyNeedsDatabase.getInstance().getMap();
-
-                double perc =  entry.getValue()/(Double) map.get(key);
+                DailyNeedsDatabase dailyNeeds = DailyNeedsDatabase.getInstance();
+                float perc =  dailyNeeds.getRelativeAmount(entry.getKey(), entry.getValue());
                 DecimalFormat df = new DecimalFormat("###.##");
                 df.setRoundingMode(RoundingMode.CEILING);
 

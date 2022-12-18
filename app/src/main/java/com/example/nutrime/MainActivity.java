@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.nutrime.dal.DailyNeedsDatabase;
 import com.example.nutrime.dal.RecipeDatabase;
 import com.example.nutrime.enums.MustHaves;
 import com.example.nutrime.enums.NoGos;
@@ -28,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         RecipeDatabase.init(getAssets());
+        DailyNeedsDatabase.init(getAssets());
 
         recipeOfTheDay = RecipeDatabase.getInstance().getRecipeOfTheDay();
     }
@@ -39,10 +42,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void switchSearch(View view) {
         if (searchIsHidden) {
-            findViewById(R.id.fragmentContainerStartpage).setY(findViewById(R.id.fragmentContainerStartpage).getY() + searchWindowDifference);
+            findViewById(R.id.fragmentContainerStartpage).animate()
+                    .translationY(searchWindowDifference)
+                    .alpha(1.0f)
+                    .setDuration(400);
         }
         else {
-            findViewById(R.id.fragmentContainerStartpage).setY(findViewById(R.id.fragmentContainerStartpage).getY() - searchWindowDifference);
+            findViewById(R.id.fragmentContainerStartpage).animate()
+                    .translationY(0)
+                    .alpha(1.0f)
+                    .setDuration(400);
         }
         searchIsHidden = !searchIsHidden;
     }
