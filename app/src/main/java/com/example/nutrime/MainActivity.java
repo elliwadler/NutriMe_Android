@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Recipe recipeOfTheDay;
     private boolean searchIsHidden = true;
-    private final int searchWindowDifference = 1430;
+    private final int searchWindowDifference = 1200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
