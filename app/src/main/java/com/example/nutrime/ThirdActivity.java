@@ -137,6 +137,10 @@ public class ThirdActivity extends AppCompatActivity {
         LinearLayout linearLayout_nutrients_amount = (LinearLayout) findViewById(R.id.ll_nutrients_column2);
         LinearLayout linearLayout_nutrients_percent = (LinearLayout) findViewById(R.id.ll_nutrients_column3);
 
+        linearLayout_nutrients.addView(new TextView(this));
+        linearLayout_nutrients_amount.addView(new TextView(this));
+        linearLayout_nutrients_percent.addView(new TextView(this));
+
         for (Map.Entry<MustHaves, Float> entry : must_haves.entrySet()) {
                 String key = entry.getKey().toString();
 
