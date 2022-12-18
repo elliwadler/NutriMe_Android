@@ -26,5 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="#00BCD4"
-        app:strokeColor="#F3EFEF" />/>
+        app:strokeColor="#F3EFEF"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
