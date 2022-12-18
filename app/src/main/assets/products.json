@@ -41,15 +41,7 @@
       "Banane"
     ],
     "should_not_eat": [
-<<<<<<< HEAD
-      "Rotwein",
-      "schwarzer Tee",
-      "Kakao",
-      "rote Beete",
-      "Spinat"
-=======
       "Zink und Eisen in hohen Mengen"
->>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ]
   },
   {
@@ -73,13 +65,7 @@
   },
   {
     "help": [
-<<<<<<< HEAD
-      "Zitrusfrüchte",
-      "Magarine",
-      "Fischöl"
-=======
       "nicht angegeben"
->>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ],
     "nutrient": "Calcium",
     "should_eat": [
@@ -99,12 +85,7 @@
   },
   {
     "help": [
-<<<<<<< HEAD
-      "Reis",
-      "Nüsse"
-=======
       "Zinkhaltige Lebensmittel"
->>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ],
     "nutrient": "Selen",
     "should_eat": [
@@ -119,15 +100,9 @@
       "Nüsse"
     ],
     "should_not_eat": [
-<<<<<<< HEAD
-      "Zitrusfrüchte",
-      "Paprika",
-      "Brokkoli"
-=======
       "Vitamin C",
       "Orangen",
       "Paprika"
->>>>>>> b7bc6e1738035357bd5fc85c9a094c0a2aff52dd
     ]
   },
   {
