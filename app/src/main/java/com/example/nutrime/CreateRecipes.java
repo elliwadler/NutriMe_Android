@@ -25,8 +25,6 @@ public class CreateRecipes {
         return instance;
     }
 
-
-
     public int[] getPictures(){
         int[] pictures = new int[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {

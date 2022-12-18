@@ -46,7 +46,7 @@
       "schwarzer Tee",
       "Kakao",
       "rote Beete",
-      "Reisen"
+      "Spinat"
     ]
   },
   {
@@ -73,7 +73,9 @@
   },
   {
     "help": [
-      ""
+      "Zitrusfrüchte",
+      "Magarine",
+      "Fischöl"
     ],
     "nutrient": "Calcium",
     "should_eat": [
@@ -85,28 +87,33 @@
       "Hülsenfrüchte"
     ],
     "should_not_eat": [
-      "Alkohol",
-      "Kaffe",
-      "Salz"
+      "Fleisch",
+      "Wurst",
+      "Limonade",
+      "Coca-Cola"
     ]
   },
   {
     "help": [
-      ""
+      "Reis",
+      "Nüsse"
     ],
     "nutrient": "Selen",
     "should_eat": [
-      "Hafer",
-      "Kakao",
-      "Paprika",
-      "Tofu",
-      "Leinsamen",
-      "Paranüsse",
-      "Champignons",
-      "Brokkoli"
+      "Fleisch",
+      "Fisch",
+      "Eier",
+      "Pilze",
+      "Kohlgemüse",
+      "Zwiebel",
+      "Linsen",
+      "Spargel",
+      "Nüsse"
     ],
     "should_not_eat": [
-      ""
+      "Zitrusfrüchte",
+      "Paprika",
+      "Brokkoli"
     ]
   },
   {
@@ -124,12 +131,15 @@
       "Brokkoli"
     ],
     "should_not_eat": [
-      ""
+      "Alkohol"
     ]
   },
   {
     "help": [
-      ""
+      "Haferflocken",
+      "Ei",
+      "Sojabohnen",
+      "Nüsse"
     ],
     "nutrient": "Omega3",
     "should_eat": [
@@ -146,19 +156,24 @@
   },
   {
     "help": [
-      ""
+      "Kakao",
+      "Joghurt",
+      "Brot"
     ],
     "nutrient": "Natrium",
     "should_eat": [
-      "Mozzerella",
+      "verarbeitete Fischprodukte",
       "Schafskäse",
       "Kastanien",
       "Oliven",
       "Salzstangen",
-      "Salami"
+      "Salami",
+      "Suppen"
     ],
     "should_not_eat": [
-      ""
+      "Bananan",
+      "Karotten",
+      "Avocado"
     ]
   }
 ]

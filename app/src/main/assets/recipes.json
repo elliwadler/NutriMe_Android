@@ -75,76 +75,66 @@
       "Tierprodukt":true
     },
     "name": "Paprika-Gulasch",
-    "picture": 2131558408,
+    "picture": 2131558412,
     "rating": 4
   },
   {
     "description": [
-      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
+      "Für das Dressing Honig mit Balsamico und etwas Salz und Pfeffer verrühren. Dann das Olivenöl hinzufügen und zu einer geschmeidigen Creme emulgieren. Die Pinienkerne in einer beschichteten Pfanne ohne Öl bräunen, dann zur Seite stellen.",
+      "Salat waschen, trockenschleudern und auf die Teller verteilen. Die Pfirsiche waschen, halbieren und den Kern entfernen. In dünne Scheiben schneiden und auf dem Salatbett anrichten. Die Kirschtomaten waschen und halbieren.",
+      "Mit Pinienkernen und Basilikumblättern bestreuen und servieren."
     ],
     "duration": 20,
     "ingredients": [
       [
-        "Zutat1",
-        "750 Gramm"
+        "grüner Salat",
+        "100 Gramm"
       ],
       [
-        "Zutat2",
-        "4 Stück"
+        "Kirschtomaten",
+        "100 Gramm"
       ],
       [
-        "Zutat3",
-        "3 Stück"
-      ],
-      [
-        "Zutat4",
+        "Pfirsiche",
         "2 Stück"
       ],
       [
-        "Zutat5",
-        "4 Stück"
+        "Pinienkerne",
+        "20 Gramm"
       ],
       [
-        "Zutat6",
-        "5 Esslöffel"
+        "Honig",
+        "1 Teelöffel"
       ],
       [
-        "Zutat7",
-        "250 ml"
+        "Balsamico",
+        "2 Teelöffel"
       ],
       [
-        "Zutat8",
-        "1 Esslöffel"
+        "Olivenöl",
+        "2 Teelöffel"
       ],
       [
-        "Zutat9",
-        "1/2 Esslöffel"
-      ],
-      [
-        "Zutat10",
-        "4 Esslöffel"
-      ],
-      [
-        "Zutat11",
+        "Salz & Pfeffer",
         "etwas"
       ]
     ],
     "mustHaves": {
-      "Eisen": 2.0,
-      "Antioxidantien": 3.0,
-      "Omega3": 1.0,
-      "Magnesium": 9.0,
-      "Kalium": 8.0,
-      "Natrium": 12.0,
-      "Selen": 3.0,
-      "Calcium": 10.0
+      "Eisen": 1.0,
+      "Antioxidantien": 15.0,
+      "Omega3": 4.0,
+      "Magnesium": 54.0,
+      "Kalium": 720.0,
+      "Natrium": 8.0,
+      "Selen": 2.0,
+      "Calcium": 200.0
     },
     "noGos":{
-      "Gluten":true,
+      "Gluten":false,
       "Fruktose":true,
       "Sojabohnen":false,
-      "Laktose":true,
-      "Nuesse":false,
+      "Laktose":false,
+      "Nuesse":true,
       "Sellerie":false,
       "Schalenfruechte":false,
       "Eier":false,
@@ -152,238 +142,284 @@
       "Tierprodukt":false
     },
     "name": "Pfirsichsalat",
-    "picture": 2131558416,
+    "picture": 2131558420,
     "rating": 2
   },
   {
     "description": [
-      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
+      "Kiwis schälen, die Hälfte davon in dünne Scheiben schneiden und für die Garnitur beiseitelegen. Restliche Kiwis grob würfeln.Spinat waschen und trocken schleudern. Mango grob würfeln. Melisse waschen, trocken schütteln und Blätter abzupfen. Banane schälen, in Stücke schneiden und mit Zitronensaft beträufeln.",
+      "Spinat und Obst mit Joghurt, Honig und Milch in einem Mixer fein pürieren, auf 4 Schalen verteilen. Mit Haferflocken und Mango garnieren. Mit Kiwischeiben und mit Melisseblättchen belegen. Sofort servieren."
     ],
-    "duration": 300,
+    "duration": 15,
     "ingredients": [
       [
-        "Zutat1",
-        "750 Gramm"
-      ],
-      [
-        "Zutat2",
-        "4 Stück"
-      ],
-      [
-        "Zutat3",
+        "Kiwis",
         "3 Stück"
       ],
       [
-        "Zutat4",
-        "2 Stück"
+        "Baby-Spinat",
+        "120 Gramm"
       ],
       [
-        "Zutat5",
-        "4 Stück"
+        "Mango",
+        "400 Gramm"
       ],
       [
-        "Zutat6",
-        "5 Esslöffel"
+        "Zitronenmeliss",
+        "2 Stiele"
       ],
       [
-        "Zutat7",
-        "250 ml"
+        "Banane",
+        "1 Stück"
       ],
       [
-        "Zutat8",
-        "1 Esslöffel"
+        "Joghurt",
+        "250 Gramm"
       ],
       [
-        "Zutat9",
-        "1/2 Esslöffel"
+        "Milch",
+        "150 Milliliter"
       ],
       [
-        "Zutat10",
-        "4 Esslöffel"
-      ],
-      [
-        "Zutat11",
-        "etwas"
+        "Haferflocken",
+        "60 Gramm"
       ]
     ],
     "mustHaves": {
-      "Eisen": 1.0,
-      "Antioxidantien": 6.0,
-      "Omega3": 14.0,
+      "Eisen": 0.1,
+      "Antioxidantien": 20.0,
+      "Omega3": 5.0,
       "Magnesium": 3.0,
-      "Kalium": 4.0,
-      "Natrium": 5.0,
-      "Selen": 5.0,
-      "Calcium": 6.0
+      "Kalium": 1.0,
+      "Natrium": 1.0,
+      "Selen": 1.0,
+      "Calcium": 1.0
     },
     "noGos":{
       "Gluten":false,
-      "Fruktose":false,
+      "Fruktose":true,
       "Sojabohnen":false,
       "Laktose":true,
       "Nuesse":false,
       "Sellerie":false,
       "Schalenfruechte":true,
       "Eier":false,
-      "Tier":true,
-      "Tierprodukt":false
+      "Tier":false,
+      "Tierprodukt":true
     },
     "name": "Kiwi-Mango Smoothie Bowl",
-    "picture": 2131558413,
+    "picture": 2131558417,
     "rating": 1
   },
   {
     "description": [
-      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
+      "Brokkoli putzen, waschen und in Röschen schneiden. Schalotte und Knoblauch schälen und hacken. 1 EL Öl in einem Topf erhitzen. Schalotte und Knoblauch 2 Minuten bei mittlerer Hitze andünsten. Brokkoli zugeben und 3 Minuten mitdünsten. Brühe zugießen und zugedeckt 8 Minuten bei kleiner Hitze garen. Erbsen zufügen und 5 Minuten zugedeckt köcheln lassen.",
+      "Inzwischen Fisch abspülen, trocken tupfen, mit Zitronensaft beträufeln und 5 Minuten ziehen lassen. Restliches Öl in einer Pfanne erhitzen. Fenchel- und Koriandersamen in einem Mörser grob zerdrücken und im heißen Öl 2 Minuten bei mittlerer Hitze anbraten. Fisch trocken tupfen, im Mehl wenden und im Öl 3 Minuten braten. Wenden und weitere 3 Minuten braten. Fisch mit Zitronenschale, Salz, Pfeffer würzen und zugedeckt bei kleiner Hitze in 5 Minuten gar ziehen lassen.",
+      "Zwischenzeitlich Minze waschen, trocken schütteln, hacken und mit Schmand unter den Brokkoli mischen. Fein pürieren und mit Salz und Pfeffer abschmecken. \nFür das Schäumchen Milch mit Salz, Pfeffer und frisch abgeriebenem Muskat würzen und erhitzen. Gemüsepüree mit dem Fisch auf Tellern anrichten. Die gewürzte Milch gut aufschäumen und je etwas Schaum über den Fisch geben."
     ],
-    "duration": 300,
+    "duration": 30,
     "ingredients": [
       [
-        "Zutat1",
-        "750 Gramm"
+        "Brokkoli",
+        "400 Gramm"
       ],
       [
-        "Zutat2",
-        "4 Stück"
+        "Schalotte",
+        "1 Stück"
       ],
       [
-        "Zutat3",
-        "3 Stück"
+        "Noblauchzehe",
+        "1 Stück"
       ],
       [
-        "Zutat4",
-        "2 Stück"
+        "Rapsöl",
+        "3 Esslöffel"
       ],
       [
-        "Zutat5",
-        "4 Stück"
+        "Gemüsebrühe",
+        "125 Milliliter"
       ],
       [
-        "Zutat6",
-        "5 Esslöffel"
+        "Erbsen",
+        "200 Gramm"
       ],
       [
-        "Zutat7",
-        "250 ml"
+        "Kabeljaufilet",
+        "500 Gramm"
       ],
       [
-        "Zutat8",
-        "1 Esslöffel"
+        "Zitrone",
+        "1/2 Stück"
       ],
       [
-        "Zutat9",
-        "1/2 Esslöffel"
+        "Vollkornmehl",
+        "10 Gramm"
       ],
       [
-        "Zutat10",
-        "4 Esslöffel"
+        "Minze",
+        "2 Stiele"
       ],
       [
-        "Zutat11",
-        "etwas"
+        "Schlagobers",
+        "20 Gramm"
+      ],
+      [
+        "Milch",
+        "150 Milliliter"
       ]
     ],
     "mustHaves": {
-      "Eisen": 13.0,
-      "Antioxidantien": 6.0,
-      "Omega3": 1.0,
-      "Magnesium": 4.5,
-      "Kalium": 5.0,
-      "Natrium": 3.0,
+      "Eisen": 2.4,
+      "Antioxidantien": 25.0,
+      "Omega3": 100,
+      "Magnesium": 77,
+      "Kalium": 922,
+      "Natrium": 10.0,
       "Selen": 2.5,
-      "Calcium": 3.0
-    },
-    "noGos":{
-      "Gluten":false,
-      "Fruktose":true,
-      "Sojabohnen":true,
-      "Laktose":true,
-      "Nuesse":false,
-      "Sellerie":true,
-      "Schalenfruechte":true,
-      "Eier":true,
-      "Tier":false,
-      "Tierprodukt":false
-    },
-    "name": "vegetarisches eisenreiches Rezept",
-    "picture": 2131558413,
-    "rating": 1
-  },
-  {
-    "description": [
-      "Alle Zutaten in einen Kochtopf geben und für 30min kochen."
-    ],
-    "duration": 300,
-    "ingredients": [
-      [
-        "Zutat1",
-        "750 Gramm"
-      ],
-      [
-        "Zutat2",
-        "4 Stück"
-      ],
-      [
-        "Zutat3",
-        "3 Stück"
-      ],
-      [
-        "Zutat4",
-        "2 Stück"
-      ],
-      [
-        "Zutat5",
-        "4 Stück"
-      ],
-      [
-        "Zutat6",
-        "5 Esslöffel"
-      ],
-      [
-        "Zutat7",
-        "250 ml"
-      ],
-      [
-        "Zutat8",
-        "1 Esslöffel"
-      ],
-      [
-        "Zutat9",
-        "1/2 Esslöffel"
-      ],
-      [
-        "Zutat10",
-        "4 Esslöffel"
-      ],
-      [
-        "Zutat11",
-        "etwas"
-      ]
-    ],
-    "mustHaves": {
-      "Eisen": 1.0,
-      "Antioxidantien": 7.0,
-      "Omega3": 3.0,
-      "Magnesium": 9.0,
-      "Kalium": 6.0,
-      "Natrium": 4.5,
-      "Selen": 5.0,
-      "Calcium": 17.0
+      "Calcium": 161
     },
     "noGos":{
       "Gluten":true,
       "Fruktose":false,
-      "Sojabohnen":true,
+      "Sojabohnen":false,
+      "Laktose":true,
+      "Nuesse":false,
+      "Sellerie":false,
+      "Schalenfruechte":false,
+      "Eier":false,
+      "Tier":true,
+      "Tierprodukt":false
+    },
+    "name": "Kabeljau auf Brokkoli-Erbsen-Püree",
+    "picture": 2131558431,
+    "rating": 2
+  },
+  {
+    "description": [
+      "Zucchini mit einem Gemüseschäler in lange dünne Streifen schneiden, damit sie ähnlich wie Bandnudeln aussehen. Das Ganze wiederholen, bis nur noch das Kerngehäuse übrig bleibt. Zoodles mit 1 Prise Meersalz einreiben und beiseitelegen.",
+      "In der Zwischenzeit das Pesto zubereiten: Knoblauchzehen schälen. Bärlauch waschen und von den Enden befreien. Nun für das Bärlauchpesto Knoblauchzehen, Bärlauch, 150 ml Olivenöl, Walnusskerne und Zitronensaft in eine Küchenmaschine geben und zu Pesto verarbeiten.",
+      "Eine Pfanne mit Olivenöl erhitzen. Die Zucchininudeln darin 2–3 Minuten andünsten. Das Bärlauchpesto dazugeben und vorsichtig unterheben. Alles mit Salz und Pfeffer abschmecken.",
+      "Zoodles mit Bärlauchpesto auf Tellern anrichten und nach Belieben mit gehackten Walnüssen garnieren."
+    ],
+    "duration": 300,
+    "ingredients": [
+      [
+        "Zucchini",
+        "3 Stück"
+      ],
+      [
+        "Knoblauchzehen",
+        "2 Stück"
+      ],
+      [
+        "Bärlauch",
+        "2 Handvoll"
+      ],
+      [
+        "Olivenöl",
+        "150 ml"
+      ],
+      [
+        "Walnusskerne",
+        "50 g"
+      ],
+      [
+        "Zitrone",
+        "1/2 Stück"
+      ]
+    ],
+    "mustHaves": {
+      "Eisen": 4.3,
+      "Antioxidantien": 10.0,
+      "Omega3": 5.0,
+      "Magnesium": 105.0,
+      "Kalium": 718.0,
+      "Natrium": 10,
+      "Selen": 1.0,
+      "Calcium": 112.0
+    },
+    "noGos":{
+      "Gluten":false,
+      "Fruktose":false,
+      "Sojabohnen":false,
       "Laktose":false,
       "Nuesse":false,
+      "Sellerie":false,
+      "Schalenfruechte":false,
+      "Eier":false,
+      "Tier":false,
+      "Tierprodukt":faöse
+    },
+    "name": "Zoodles auf Bärlauchpesto",
+    "picture": 2131558434,
+    "rating": 3
+  },
+  {
+    "description": [
+      "Mehl mit 1 TL Salz mischen. 125 g Butter in kleine Würfel schneiden und mit Apfelsaft zu einem glatten geschmeidigen Teig verkneten. Zu einer Kugel formen, in ein feuchtes Tuch wickeln und für mindestens 30 Minuten in den Kühlschrank legen. Boden der Springform mit Backpapier auslegen und den Rand mit der restlichen Butter einfetten.",
+      "Inzwischen Lauch putzen, gründlich waschen und in feine Streifen schneiden. Apfel waschen, vierteln, Kerngehäuse entfernen, Viertel in dünne Scheiben schneiden. Thymian waschen, trocken schütteln, Blättchen abzupfen. Öl in einer Pfanne erhitzen. Lauch darin bei mittlerer Hitze unter Rühren etwa 5 Minuten dünsten. Apfelscheiben zugeben und 3 Minuten mitdünsten. Lauch-Apfel-Mischung mit Salz, Pfeffer und Thymian abschmecken. Bergkäse grob raspeln. Kartoffeln pellen und in dünne Scheiben schneiden.",
+      "Aus 2/3 des Teigs eine Kugel formen und auf einer bemehlten Arbeitsfläche rund (32 cm Ø) ausrollen. Die Springform damit auslegen, dabei einen 3–4 cm hohen Rand formen. Die Hälfte der Kartoffeln einschichten, mit Salz würzen und mit etwas Käse bestreuen. Lauch-Apfel-Mischung darauf verteilen und ebenfalls mit Käse bestreuen. Restliche Kartoffeln einschichten und mit restlichem Käse bestreuen.",
+      "Eier mit der Sahne verrühren, mit Salz und Pfeffer würzen und über die Füllung gießen. Haselnüsse grob hacken und mit dem restlichen Teig zu Streuseln verkneten. Streusel über den Kuchen verteilen und leicht andrücken. Kartoffel-Lauch-Kuchen im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 45 Minuten backen."
+    ],
+    "duration": 40,
+    "ingredients": [
+      [
+        "Vollkornmehl",
+        "300 Gramm"
+      ],
+      [
+        "kalte Butter",
+        "130 Gramm"
+      ],
+      [
+        "Apfelsaft",
+        "80 Milliliter"
+      ],
+      [
+        "Bergkäse",
+        "200 Gramm"
+      ],
+      [
+        "Kartoffeln",
+        "600 Gramm"
+      ],
+      [
+        "Eier",
+        "3 Stück"
+      ],
+      [
+        "Schlagsahne",
+        "200 Gramm"
+      ],
+      [
+        "Haselnusskerne",
+        "30 Gramm"
+      ]
+    ],
+    "mustHaves": {
+      "Eisen": 1.8,
+      "Antioxidantien": 15.0,
+      "Omega3": 10.0,
+      "Magnesium": 58.0,
+      "Kalium": 379.0,
+      "Natrium": 4.5,
+      "Selen": 7.0,
+      "Calcium": 235.0
+    },
+    "noGos":{
+      "Gluten":true,
+      "Fruktose":true,
+      "Sojabohnen":false,
+      "Laktose":true,
+      "Nuesse":true,
       "Sellerie":false,
       "Schalenfruechte":true,
       "Eier":true,
       "Tier":false,
       "Tierprodukt":true
     },
-    "name": "calciumreiches veganes Rezept",
-    "picture": 2131558413,
-    "rating": 1
+    "name": "Kartoffel-Lauch-Kuchen",
+    "picture": 2131558408,
+    "rating": 2
   }
 ]

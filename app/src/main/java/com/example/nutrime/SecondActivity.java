@@ -261,7 +261,7 @@ public class SecondActivity extends AppCompatActivity {
 
         TextView textView = new TextView(this);
         textView.setText(products.String_should_eat());
-        textView.setLines(3);
+        textView.setLines(2);
         textView.setTextSize(14);
         textView.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView);
@@ -278,7 +278,7 @@ public class SecondActivity extends AppCompatActivity {
 
         TextView textView_no = new TextView(this);
         textView_no.setText(products.String_should_not_eat());
-        textView_no.setLines(3);
+        textView_no.setLines(2);
         textView_no.setTextSize(14);
         textView_no.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView_no);
@@ -296,7 +296,7 @@ public class SecondActivity extends AppCompatActivity {
 
         TextView textView_h = new TextView(this);
         textView_h.setText(products.String_help());
-        textView_h.setLines(3);
+        textView_h.setLines(2);
         textView_h.setTextSize(14);
         textView_h.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView_h);

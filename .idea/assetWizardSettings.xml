@@ -35,7 +35,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\ellil\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -73,13 +73,24 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
+                                      <entry key="backgroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="imagePath" value="C:\Users\ellil\OneDrive\Dokumente\WS22\MobilePlattform\NutriMe_images\zoodles-mit-baerlauchpesto-670323.jpg" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundClipArt">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\ellil\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                                 <entry key="scalingPercent" value="16" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
@@ -93,7 +104,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/lightbulb.png" />
+                                                <entry key="imagePath" value="C:\Users\ellil\OneDrive\Dokumente\WS22\MobilePlattform\NutriMe_images\kartoffel-lauch-kuchen-668779.jpg" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -107,6 +118,7 @@
                                               <map>
                                                 <entry key="color" value="a1dca1" />
                                                 <entry key="scalingPercent" value="80" />
+                                                <entry key="text" value="" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -120,6 +132,7 @@
                                               <map>
                                                 <entry key="color" value="a1dca1" />
                                                 <entry key="scalingPercent" value="80" />
+                                                <entry key="text" value="" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -130,13 +143,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="generateLegacyIcon" value="false" />
-                                      <entry key="generatePlayStoreIcon" value="false" />
-                                      <entry key="generateRoundIcon" value="false" />
-                                      <entry key="outputName" value="custom_lightbulb" />
-                                      <entry key="previewDensity" value="MEDIUM" />
+                                      <entry key="foregroundAssetType" value="TEXT" />
+                                      <entry key="outputName" value="zoodles" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -153,7 +161,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\ellil\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -197,7 +205,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\ellil\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -261,7 +269,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\ellil\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -300,11 +308,6 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
-                                    </map>
-                                  </option>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="previewDensity" value="MEDIUM" />
                                     </map>
                                   </option>
                                 </PersistentState>
