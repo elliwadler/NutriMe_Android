@@ -254,15 +254,14 @@ public class SecondActivity extends AppCompatActivity {
         TextView textView_header1 = new TextView(this);
         textView_header1.setText(nutrient+"-haltige Lebensmittel");
         textView_header1.setTypeface(textView_header1.getTypeface(), Typeface.BOLD);
-        textView_header1.setTextColor(getResources().getColor(R.color.bg_rounded_green_background));
+        textView_header1.setTextColor(getResources().getColor(R.color.green_darker));
         textView_header1.setTextSize(16);
         textView_header1.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView_header1);
 
         TextView textView = new TextView(this);
         textView.setText(products.String_should_eat());
-        textView.setMaxLines(4);
-        textView.setLines(4);
+        textView.setLines(3);
         textView.setTextSize(14);
         textView.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView);
@@ -272,15 +271,14 @@ public class SecondActivity extends AppCompatActivity {
         TextView textView_header2 = new TextView(this);
         textView_header2.setText("Hemmt Aufnahme");
         textView_header2.setTypeface(textView_header2.getTypeface(), Typeface.BOLD);
-        textView_header2.setTextColor(getResources().getColor(R.color.bg_rounded_red_background));
+        textView_header2.setTextColor(getResources().getColor(R.color.red));
         textView_header2.setTextSize(16);
         textView_header2.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView_header2);
 
         TextView textView_no = new TextView(this);
         textView_no.setText(products.String_should_not_eat());
-        textView_no.setMaxLines(4);
-        textView_no.setLines(4);
+        textView_no.setLines(3);
         textView_no.setTextSize(14);
         textView_no.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView_no);
@@ -291,15 +289,14 @@ public class SecondActivity extends AppCompatActivity {
         TextView textView_header3 = new TextView(this);
         textView_header3.setText("Fördert Aufnahme");
         textView_header3.setTypeface(textView_header3.getTypeface(), Typeface.BOLD);
-        textView_header3.setTextColor(getResources().getColor(R.color.bg_rounded_yellow_background));
+        textView_header3.setTextColor(getResources().getColor(R.color.yellow));
         textView_header3.setTextSize(16);
         textView_header3.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView_header3);
 
         TextView textView_h = new TextView(this);
         textView_h.setText(products.String_help());
-        textView_h.setMaxLines(4);
-        textView_h.setLines(4);
+        textView_h.setLines(3);
         textView_h.setTextSize(14);
         textView_h.setPadding(20, 20, 20, 20);
         linearLayout_food.addView(textView_h);

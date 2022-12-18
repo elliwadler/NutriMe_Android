@@ -5,6 +5,8 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="10dp"
     tools:context=".Startpage">
 
     <SearchView
@@ -18,7 +20,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayoutDiet"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
@@ -58,7 +60,7 @@
         android:id="@+id/checkBoxAntioxidantien"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="70dp"
         android:text="Antioxidantien"
         app:layout_constraintStart_toEndOf="@+id/checkBoxMagnesium"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxSelen" />
@@ -86,7 +88,7 @@
         android:id="@+id/checkBoxSelen"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="127dp"
         android:layout_marginTop="36dp"
         android:text="Selen"
         app:layout_constraintStart_toEndOf="@+id/checkBoxEisen"
@@ -105,7 +107,7 @@
         android:id="@+id/checkBoxOmega3"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="118dp"
         android:text="Omega-3"
         app:layout_constraintStart_toEndOf="@+id/checkBoxKalium"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxAntioxidantien" />
@@ -123,7 +125,7 @@
         android:id="@+id/checkBoxNatrium"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="132dp"
+        android:layout_marginStart="110dp"
         android:text="Natrium"
         app:layout_constraintStart_toEndOf="@+id/checkBoxCalcium"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxOmega3" />
@@ -152,7 +154,7 @@
         android:id="@+id/checkBoxSellerie"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="105dp"
         android:layout_marginTop="1dp"
         android:text="Sellerie"
         app:layout_constraintStart_toEndOf="@+id/checkBoxFruktose"
@@ -180,7 +182,7 @@
         android:id="@+id/checkBoxSchalenfruechte"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="110dp"
+        android:layout_marginStart="86dp"
         android:text="Schalenfrüchte"
         app:layout_constraintStart_toEndOf="@+id/checkBoxSoja"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxSellerie" />
@@ -189,7 +191,7 @@
         android:id="@+id/checkBoxEier"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="134dp"
+        android:layout_marginStart="110dp"
         android:text="Eier"
         app:layout_constraintStart_toEndOf="@+id/checkBoxLaktose"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxSchalenfruechte" />
@@ -207,7 +209,7 @@
         android:id="@+id/checkBoxNuesse"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="144dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="40dp"
         android:text="Nüsse"
         app:layout_constraintStart_toEndOf="@+id/checkBoxGluten"
