@@ -1,6 +1,7 @@
 package com.example.nutrime;
 
 import android.graphics.Color;
+import android.icu.number.Precision;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,8 +10,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.nutrime.dal.DailyNeedsDatabase;
+import com.example.nutrime.dal.ProductDatabase;
 import com.example.nutrime.enums.MustHaves;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -150,8 +156,19 @@ public class ThirdActivity extends AppCompatActivity {
                 textView1.setPadding(20, 20, 20, 20);
                 linearLayout_nutrients_amount.addView(textView1);
 
+
+                DailyNeedsDatabase.Init(getAssets());
+                HashMap map = new HashMap();
+                map = DailyNeedsDatabase.getInstance().getMap();
+
+                double perc =  entry.getValue()/(Double) map.get(key);
+                DecimalFormat df = new DecimalFormat("###.##");
+                df.setRoundingMode(RoundingMode.CEILING);
+
+                String perc_round =  df.format(perc);
+
                 TextView textView2 = new TextView(this);
-                textView2.setText("= 100%");
+                textView2.setText("= "+perc_round+"%");
                 textView2.setTextSize(14);
                 textView2.setTextColor(Color.parseColor("#000000"));
                 textView2.setPadding(20, 20, 20, 20);

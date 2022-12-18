@@ -93,7 +93,7 @@ public class CreateProducts {
 
         Gson gson = new Gson();
         String json = gson.toJson(products, listType);
-        List<String> target2 = gson.fromJson(json, listType);
+       // List<String> target2 = gson.fromJson(json, listType);
 
 
         System.out.println(json);

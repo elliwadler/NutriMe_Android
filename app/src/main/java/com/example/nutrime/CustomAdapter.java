@@ -19,10 +19,10 @@ import java.util.zip.Inflater;
 
 public class CustomAdapter extends BaseAdapter {
     Context context;
-    String name_List[];
-    String rating_List[];
-    String time_List[];
-    int pictures[];
+    String[] name_List;
+    String[] rating_List;
+    String[] time_List;
+    int[] pictures;
     ArrayList properties_List;
     LayoutInflater inflter;
 

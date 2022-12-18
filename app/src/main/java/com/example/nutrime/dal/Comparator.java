@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Comparator implements java.util.Comparator<Recipe> {
 
-    private List<MustHaves> mustHaves;
+    private final List<MustHaves> mustHaves;
 
     public Comparator(List<MustHaves> mustHaves) {
         this.mustHaves = mustHaves;

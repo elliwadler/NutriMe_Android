@@ -1,6 +1,7 @@
 package com.example.nutrime;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -35,9 +36,12 @@ public class SecondActivity extends AppCompatActivity {
 
         Gson gson = new Gson();
         Intent intent = getIntent();
-        List<MustHaves> mustHaves = gson.fromJson(intent.getStringExtra("mustHavesList"), new TypeToken<ArrayList<MustHaves>>() {}.getType());
-        List<NoGos> noGos = gson.fromJson(intent.getStringExtra("noGosList"), new TypeToken<ArrayList<NoGos>>() {}.getType());
-        List<Recipe> sortedRecipes = gson.fromJson(intent.getStringExtra("sortedRecipesList"), new TypeToken<ArrayList<Recipe>>() {}.getType());
+        List<MustHaves> mustHaves = gson.fromJson(intent.getStringExtra("mustHavesList"), new TypeToken<ArrayList<MustHaves>>() {
+        }.getType());
+        List<NoGos> noGos = gson.fromJson(intent.getStringExtra("noGosList"), new TypeToken<ArrayList<NoGos>>() {
+        }.getType());
+        List<Recipe> sortedRecipes = gson.fromJson(intent.getStringExtra("sortedRecipesList"), new TypeToken<ArrayList<Recipe>>() {
+        }.getType());
 
         recipes = CreateRecipes.getInstance();
         recipes.init(sortedRecipes);
@@ -56,7 +60,14 @@ public class SecondActivity extends AppCompatActivity {
         LinearLayout linearLayout_name = (LinearLayout) findViewById(R.id.searchresult_yellow);
 
         TextView textView_kind = new TextView(this);
-        textView_kind.setText("Vegetarisch");
+
+        if (noGos.contains(NoGos.Tier)) {
+            textView_kind.setText("Vegetarisch");
+        } else if (noGos.contains(NoGos.Tierprodukt)) {
+            textView_kind.setText("Vegan");
+        } else {
+            textView_kind.setText("Alles");
+        }
         textView_kind.setTextSize(14);
         textView_kind.setBackgroundColor(getResources().getColor(R.color.bg_rounded_yellow_background));
         textView_kind.setPadding(20, 20, 20, 20);
@@ -76,26 +87,21 @@ public class SecondActivity extends AppCompatActivity {
         linearLayout_no1.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout_no_origin.addView(linearLayout_no1);
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < noGos.size(); i++) {
+            String name = noGos.get(i).toString();
+            TextView textView_no = new TextView(this);
+            textView_no.setText(name);
+            textView_no.setTextSize(14);
+            textView_no.setBackgroundColor(getResources().getColor(R.color.bg_rounded_red_background));
+            textView_no.setPadding(20, 20, 20, 20);
             if (i < 4) {
-                TextView textView_no = new TextView(this);
-                textView_no.setText("Nüsse");
-                textView_no.setTextSize(14);
-                textView_no.setBackgroundColor(getResources().getColor(R.color.bg_rounded_red_background));
-                textView_no.setPadding(20, 20, 20, 20);
                 linearLayout_no.addView(textView_no);
-                textView_no.setLayoutParams(params);
             }
             if (i >= 4) {
-
-                TextView textView_no1 = new TextView(this);
-                textView_no1.setText("Nüsse");
-                textView_no1.setTextSize(14);
-                textView_no1.setBackgroundColor(getResources().getColor(R.color.bg_rounded_red_background));
-                textView_no1.setPadding(20, 20, 20, 20);
-                linearLayout_no1.addView(textView_no1);
-                textView_no1.setLayoutParams(params);
+                linearLayout_no1.addView(textView_no);
             }
+            textView_no.setLayoutParams(params);
+
         }
 
         LinearLayout linearLayout_yes_origin = (LinearLayout) findViewById(R.id.searchresult_green);
@@ -108,42 +114,43 @@ public class SecondActivity extends AppCompatActivity {
         linearLayout_yes1.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout_yes_origin.addView(linearLayout_yes1);
 
-        for (int i = 0; i < mustHaves.size() ; i++) {
+        for (int i = 0; i < mustHaves.size(); i++) {
 
-                String name = mustHaves.get(i).toString();
-                TextView textView_yes = new TextView(this);
-                textView_yes.setText(name);
-                textView_yes.setTextSize(14);
-                textView_yes.setClickable(true);
-                number = i;
-                textView_yes.setOnClickListener(this::onClick);
-                textView_yes.setBackgroundColor(getResources().getColor(R.color.bg_rounded_green_background));
-                textView_yes.setPadding(20, 20, 20, 20);
+            String name = mustHaves.get(i).toString();
+            TextView textView_yes = new TextView(this);
+            textView_yes.setText(name);
+            textView_yes.setTextSize(14);
+            textView_yes.setClickable(true);
+            number = i;
+            textView_yes.setOnClickListener(this::onClick);
+            textView_yes.setBackgroundColor(getResources().getColor(R.color.bg_rounded_green_background));
+            textView_yes.setPadding(20, 20, 20, 20);
 
-                textView_yes.setId(getIDButton(name));
+            textView_yes.setId(getIDButton(name));
 
-                if (i < 4) {
-                    linearLayout_yes.addView(textView_yes);
-                }
-                if (i >= 4) {
-                    linearLayout_yes1.addView(textView_yes);
-                }
+            if (i < 4) {
+                linearLayout_yes.addView(textView_yes);
+            }
+            if (i >= 4) {
+                linearLayout_yes1.addView(textView_yes);
+            }
             textView_yes.setLayoutParams(params);
         }
     }
-    public void switchScreen(int position){
-                String name = recipes.getRecipe(position).getName();
-                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
-                intent.putExtra("REZEPT_name",name);
 
-                startActivity(intent);
+    public void switchScreen(int position) {
+        String name = recipes.getRecipe(position).getName();
+        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+        intent.putExtra("REZEPT_name", name);
+
+        startActivity(intent);
     }
 
-    public void LoadDataInListView(){
-        String recipe_name_List[] = recipes.getNames();
-        String recipe_rating_List[] = recipes.getRating();
-        int recipe_picture_List[] = recipes.getPictures();
-        String recipe_time_List[] = recipes.getTime();
+    public void LoadDataInListView() {
+        String[] recipe_name_List = recipes.getNames();
+        String[] recipe_rating_List = recipes.getRating();
+        int[] recipe_picture_List = recipes.getPictures();
+        String[] recipe_time_List = recipes.getTime();
 
         ArrayList<String[]> recipe_properties_List = recipes.getProperties();
 
@@ -157,32 +164,32 @@ public class SecondActivity extends AppCompatActivity {
         simpleList.setAdapter(customAdapter);
     }
 
-    public int getIDButton(String name){
-        int id=0;
-        switch (name){
+    public int getIDButton(String name) {
+        int id = 0;
+        switch (name) {
             case ("Eisen"):
-                id=0;
+                id = 0;
                 break;
             case ("Magnesium"):
-                id=1;
+                id = 1;
                 break;
-            case("Kalium"):
-                id=2;
+            case ("Kalium"):
+                id = 2;
                 break;
-            case("Calcium"):
-                id=3;
+            case ("Calcium"):
+                id = 3;
                 break;
-            case("Selen"):
-                id=4;
+            case ("Selen"):
+                id = 4;
                 break;
-            case("Antioxidantien"):
-                id=5;
+            case ("Antioxidantien"):
+                id = 5;
                 break;
-            case("Omega3"):
-                id=6;
+            case ("Omega3"):
+                id = 6;
                 break;
-            case("Natrium"):
-                id=7;
+            case ("Natrium"):
+                id = 7;
                 break;
         }
         return id;
@@ -192,14 +199,13 @@ public class SecondActivity extends AppCompatActivity {
         LinearLayout linearLayout_food = (LinearLayout) findViewById(R.id.ll_food);
         linearLayout_food.removeAllViews();
 
-        if(linearLayout_food.getVisibility()== View.GONE) {
+        if (linearLayout_food.getVisibility() == View.GONE) {
             linearLayout_food.animate()
                     .translationY(70)
                     .alpha(1.0f)
                     .setDuration(400);
             linearLayout_food.setVisibility(View.VISIBLE);
-        }
-        else {
+        } else {
             linearLayout_food.animate()
                     .translationY(0)
                     .alpha(0.0f)
@@ -208,51 +214,96 @@ public class SecondActivity extends AppCompatActivity {
         }
 
 
-
         switch (view.getId()) {
             case (0):
                 loadProducts("Eisen", linearLayout_food);
                 break;
             case (1):
-                loadProducts("Magnesium",  linearLayout_food);
+                loadProducts("Magnesium", linearLayout_food);
                 break;
             case (2):
-                loadProducts("Kalium",  linearLayout_food);
+                loadProducts("Kalium", linearLayout_food);
                 break;
             case (3):
-                loadProducts("Calcium",  linearLayout_food);
+                loadProducts("Calcium", linearLayout_food);
                 break;
             case (4):
-                loadProducts("Selen",  linearLayout_food);
+                loadProducts("Selen", linearLayout_food);
                 break;
             case (5):
-                loadProducts("Antioxidantien",  linearLayout_food);
+                loadProducts("Antioxidantien", linearLayout_food);
                 break;
             case (6):
-                loadProducts("Omega3",  linearLayout_food);
+                loadProducts("Omega3", linearLayout_food);
                 break;
             case (7):
-                loadProducts("Natrium",  linearLayout_food);
+                loadProducts("Natrium", linearLayout_food);
                 break;
         }
 
 
     }
 
-    public void loadProducts(String nutrient, LinearLayout linearLayout_food){
+    public void loadProducts(String nutrient, LinearLayout linearLayout_food) {
 
         ProductDatabase.Init(getAssets());
         Products products = new Products();
         products = ProductDatabase.getInstance().getSpecificProductList(nutrient);
 
+        //should eat
+        TextView textView_header1 = new TextView(this);
+        textView_header1.setText(nutrient+"-haltige Lebensmittel");
+        textView_header1.setTypeface(textView_header1.getTypeface(), Typeface.BOLD);
+        textView_header1.setTextColor(getResources().getColor(R.color.bg_rounded_green_background));
+        textView_header1.setTextSize(16);
+        textView_header1.setPadding(20, 20, 20, 20);
+        linearLayout_food.addView(textView_header1);
 
-        //for (String s : products.should_eat) {
-            TextView textView = new TextView(this);
-            textView.setText(products.String_should_eat());
-            textView.setTextSize(14);
-            textView.setPadding(20, 20, 20, 20);
-            linearLayout_food.addView(textView);
-        //}
+        TextView textView = new TextView(this);
+        textView.setText(products.String_should_eat());
+        textView.setMaxLines(4);
+        textView.setLines(4);
+        textView.setTextSize(14);
+        textView.setPadding(20, 20, 20, 20);
+        linearLayout_food.addView(textView);
+
+        //shouldn't eat
+
+        TextView textView_header2 = new TextView(this);
+        textView_header2.setText("Hemmt Aufnahme");
+        textView_header2.setTypeface(textView_header2.getTypeface(), Typeface.BOLD);
+        textView_header2.setTextColor(getResources().getColor(R.color.bg_rounded_red_background));
+        textView_header2.setTextSize(16);
+        textView_header2.setPadding(20, 20, 20, 20);
+        linearLayout_food.addView(textView_header2);
+
+        TextView textView_no = new TextView(this);
+        textView_no.setText(products.String_should_not_eat());
+        textView_no.setMaxLines(4);
+        textView_no.setLines(4);
+        textView_no.setTextSize(14);
+        textView_no.setPadding(20, 20, 20, 20);
+        linearLayout_food.addView(textView_no);
+
+
+        //shouldn't eat
+
+        TextView textView_header3 = new TextView(this);
+        textView_header3.setText("Fördert Aufnahme");
+        textView_header3.setTypeface(textView_header3.getTypeface(), Typeface.BOLD);
+        textView_header3.setTextColor(getResources().getColor(R.color.bg_rounded_yellow_background));
+        textView_header3.setTextSize(16);
+        textView_header3.setPadding(20, 20, 20, 20);
+        linearLayout_food.addView(textView_header3);
+
+        TextView textView_h = new TextView(this);
+        textView_h.setText(products.String_help());
+        textView_h.setMaxLines(4);
+        textView_h.setLines(4);
+        textView_h.setTextSize(14);
+        textView_h.setPadding(20, 20, 20, 20);
+        linearLayout_food.addView(textView_h);
+
 
     }
 }

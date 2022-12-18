@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class CreateRecipes {
 
-    Recipe recipes[];
+    Recipe[] recipes;
     public static CreateRecipes instance = new CreateRecipes();
 
     private CreateRecipes() {
@@ -28,7 +28,7 @@ public class CreateRecipes {
 
 
     public int[] getPictures(){
-        int pictures[] = new int[this.recipes.length];
+        int[] pictures = new int[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {
             pictures[i] = recipes[i].getPicture();
         }
@@ -36,7 +36,7 @@ public class CreateRecipes {
     }
 
     public String[] getNames(){
-        String names[] = new String[this.recipes.length];
+        String[] names = new String[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {
             names[i] = recipes[i].getName();
         }
@@ -44,14 +44,14 @@ public class CreateRecipes {
     }
 
     public String[] getRating(){
-        String rating[] = new String[this.recipes.length];
+        String[] rating = new String[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {
             rating[i] = String.valueOf(recipes[i].getRating());
         }
         return rating;
     }
     public String[] getTime(){
-        String time_string[] = new String[this.recipes.length];
+        String[] time_string = new String[this.recipes.length];
         for (int i = 0; i<recipes.length;i++) {
             time_string[i] = recipes[i].getPreparationTimePrettyPrint();
         }

@@ -14,7 +14,7 @@ public class Recipe {
     private String name;
     private int picture;
     private String[] description;
-    private List<String[]> ingredients;
+    private final List<String[]> ingredients;
     private Map<MustHaves, Float> mustHaves;
     private Map<NoGos, Boolean> noGos;
     private int rating;

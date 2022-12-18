@@ -60,4 +60,20 @@ public class Products {
         }
         return string;
     }
+
+    public String String_should_not_eat(){
+        String string=should_not_eat.get(0);
+        for (String s : this.should_not_eat.subList(1,should_not_eat.size())) {
+            string+=", "+s;
+        }
+        return string;
+    }
+
+    public String String_help(){
+        String string=help.get(0);
+        for (String s : this.help.subList(1,help.size())) {
+            string+=", "+s;
+        }
+        return string;
+    }
 }
