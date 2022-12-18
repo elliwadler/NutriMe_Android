@@ -88,7 +88,11 @@ public class SecondActivity extends AppCompatActivity {
         linearLayout_no_origin.addView(linearLayout_no1);
 
         for (int i = 0; i < noGos.size(); i++) {
-            String name = noGos.get(i).toString();
+            NoGos noGo = noGos.get(i);
+            if (noGo == NoGos.Tier || noGo == NoGos.Tierprodukt)
+                continue;
+
+            String name = noGo.toString();
             TextView textView_no = new TextView(this);
             textView_no.setText(name);
             textView_no.setTextSize(14);

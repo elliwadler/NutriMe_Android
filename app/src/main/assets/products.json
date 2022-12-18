@@ -11,16 +11,16 @@
       "Rindfleisch",
       "Sesam",
       "Pistazien",
-      "Spinat",
-      "Haferflocken",
+      "gekochter Spinat",
+      "eingeweichte Haferflocken",
       "Cashewkerne"
     ],
     "should_not_eat": [
       "Rotwein",
       "schwarzer Tee",
-      "Kakao",
+      "Kaffee",
       "rote Beete",
-      "Reisen"
+      "calciumreiche Milch"
     ]
   },
   {
@@ -34,7 +34,6 @@
     "should_eat": [
       "Kürbiskerne",
       "Weizenkleie",
-      "Weizenkleie",
       "Mandeln",
       "Sojabohnen",
       "Mais",
@@ -42,11 +41,7 @@
       "Banane"
     ],
     "should_not_eat": [
-      "Rotwein",
-      "schwarzer Tee",
-      "Kakao",
-      "rote Beete",
-      "Reisen"
+      "Zink und Eisen in hohen Mengen"
     ]
   },
   {
@@ -61,19 +56,16 @@
       "Mandeln",
       "Zartbitterschokolade",
       "Dinkelmehl",
-      "Forelle"
+      "Forelle",
+      "Meeresfrüchte"
     ],
     "should_not_eat": [
-      "Rotwein",
-      "schwarzer Tee",
-      "Kakao",
-      "rote Beete",
-      "Reisen"
+      "nicht angegeben"
     ]
   },
   {
     "help": [
-      ""
+      "nicht angegeben"
     ],
     "nutrient": "Calcium",
     "should_eat": [
@@ -92,7 +84,7 @@
   },
   {
     "help": [
-      ""
+      "Zinkhaltige Lebensmittel"
     ],
     "nutrient": "Selen",
     "should_eat": [
@@ -106,7 +98,9 @@
       "Brokkoli"
     ],
     "should_not_eat": [
-      ""
+      "Vitamin C",
+      "Orangen",
+      "Paprika"
     ]
   },
   {
@@ -115,13 +109,11 @@
     ],
     "nutrient": "Antioxidantien",
     "should_eat": [
-      "Äpfel",
-      "Kaffee",
-      "Knoblauch",
-      "Tomaten",
-      "Hirse",
-      "Paranüsse",
-      "Brokkoli"
+      "Zitrusfrüchte",
+      "Paprika",
+      "Acerolkirsche",
+      "Aroniabeere",
+      "Aubergine"
     ],
     "should_not_eat": [
       ""
@@ -141,7 +133,9 @@
       "Thunfisch"
     ],
     "should_not_eat": [
-      ""
+      "tierische Fette",
+      "Eier",
+      "Milch"
     ]
   },
   {
@@ -152,6 +146,9 @@
     "should_eat": [
       "Mozzerella",
       "Schafskäse",
+      "Hartkäse",
+      "gekochter Schinken",
+      "Vollmilch",
       "Kastanien",
       "Oliven",
       "Salzstangen",

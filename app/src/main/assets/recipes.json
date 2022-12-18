@@ -67,11 +67,11 @@
       "Fruktose":true,
       "Sojabohnen":false,
       "Laktose":false,
-      "Nuesse":true,
-      "Sellerie":false,
+      "Nuesse":false,
+      "Sellerie":true,
       "Schalenfruechte":false,
       "Eier":true,
-      "Tier":false,
+      "Tier":true,
       "Tierprodukt":true
     },
     "name": "Paprika-Gulasch",
@@ -144,12 +144,12 @@
       "Fruktose":true,
       "Sojabohnen":false,
       "Laktose":true,
-      "Nuesse":false,
+      "Nuesse":true,
       "Sellerie":false,
       "Schalenfruechte":false,
       "Eier":false,
       "Tier":false,
-      "Tierprodukt":false
+      "Tierprodukt":true
     },
     "name": "Pfirsichsalat",
     "picture": 2131558416,
@@ -218,14 +218,14 @@
     },
     "noGos":{
       "Gluten":false,
-      "Fruktose":false,
+      "Fruktose":true,
       "Sojabohnen":false,
-      "Laktose":true,
+      "Laktose":false,
       "Nuesse":false,
       "Sellerie":false,
-      "Schalenfruechte":true,
+      "Schalenfruechte":false,
       "Eier":false,
-      "Tier":true,
+      "Tier":false,
       "Tierprodukt":false
     },
     "name": "Kiwi-Mango Smoothie Bowl",
@@ -303,7 +303,7 @@
       "Schalenfruechte":true,
       "Eier":true,
       "Tier":false,
-      "Tierprodukt":false
+      "Tierprodukt":true
     },
     "name": "vegetarisches eisenreiches Rezept",
     "picture": 2131558413,
@@ -372,15 +372,15 @@
     },
     "noGos":{
       "Gluten":true,
-      "Fruktose":false,
+      "Fruktose":true,
       "Sojabohnen":true,
       "Laktose":false,
       "Nuesse":false,
       "Sellerie":false,
       "Schalenfruechte":true,
-      "Eier":true,
+      "Eier":false,
       "Tier":false,
-      "Tierprodukt":true
+      "Tierprodukt":false
     },
     "name": "calciumreiches veganes Rezept",
     "picture": 2131558413,
